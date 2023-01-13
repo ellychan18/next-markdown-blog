@@ -20,7 +20,14 @@ import hljs from "highlight.js";
 marked.setOptions({
   langPrefix: "hljs language-",
   highlight: function (code) {
-    return hljs.highlightAuto(code, ["html", "javascript"]).value;
+    return hljs.highlightAuto(code, [
+      "html",
+      "javascript",
+      "php",
+      "bash",
+      "python",
+    ]).value;
+    // return hljs.highlightAll(code);
   },
 });
 
