@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+header {
+  background: steelblue;
+  color: #fff;
+  padding: 5px;
+  margin-bottom: 40px;
+}
+
+header a {
+  color: #fff;
+}
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: steelblue;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-back {
+  background: #f4f4f4;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-page {
+  padding: 15px 30px;
+}
+
+.post-title {
+  margin: 10px 0;
+}
+
+.post-date {
+  background: #f4f4f4;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+}
+
+.post-body ul,
+ol {
+  font-size: 110%;
+  line-height: 2.3;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.post-body pre {
+  /* background: #f4f4f4; */
+  margin: 20px 0;
+  line-height: 2.3;
+}
+
+@media (max-width: 500px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+code.hljs {
+  padding: 3px 5px;
+} /*!
+  Theme: GitHub Dark
+  Description: Dark theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Outdated base version: https://github.com/primer/github-syntax-dark
+  Current colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #c9d1d9;
+  background: #0d1117;
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  color: #ff7b72;
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  color: #d2a8ff;
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-variable {
+  color: #79c0ff;
+}
+.hljs-meta .hljs-string,
+.hljs-regexp,
+.hljs-string {
+  color: #a5d6ff;
+}
+.hljs-built_in,
+.hljs-symbol {
+  color: #ffa657;
+}
+.hljs-code,
+.hljs-comment,
+.hljs-formula {
+  color: #8b949e;
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-pseudo,
+.hljs-selector-tag {
+  color: #7ee787;
+}
+.hljs-subst {
+  color: #c9d1d9;
+}
+.hljs-section {
+  color: #1f6feb;
+  font-weight: 700;
+}
+.hljs-bullet {
+  color: #f2cc60;
+}
+.hljs-emphasis {
+  color: #c9d1d9;
+  font-style: italic;
+}
+.hljs-strong {
+  color: #c9d1d9;
+  font-weight: 700;
+}
+.hljs-addition {
+  color: #aff5b4;
+  background-color: #033a16;
+}
+.hljs-deletion {
+  color: #ffdcd7;
+  background-color: #67060c;
+}
