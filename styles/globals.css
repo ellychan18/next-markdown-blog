@@ -29,7 +29,7 @@ img {
   border-radius: 10px;
 }
 
-header {
+/* header {
   background: steelblue;
   color: #fff;
   padding: 5px;
@@ -38,7 +38,7 @@ header {
 
 header a {
   color: #fff;
-}
+} */
 
 .container {
   max-width: 900px;
