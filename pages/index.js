@@ -10,10 +10,6 @@ export default function Home({ posts }) {
     <>
       <Head>
         <title>Dev Blog</title>
-        {/* <link
-          rel="stylesheet"
-          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.3.2/build/styles/default.min.css"
-        ></link> */}
       </Head>
 
       <div className="posts">

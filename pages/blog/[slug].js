@@ -26,6 +26,7 @@ marked.setOptions({
       "php",
       "bash",
       "python",
+      "shell",
     ]).value;
     // return hljs.highlightAll(code);
   },
