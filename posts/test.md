@@ -1,8 +1,12 @@
 ---
 title: "Test Post"
+tag: "Programming"
 date: "January 14 2023"
 excerpt: "This is the excerpt"
 cover_image: "/images/posts/default.png"
+author_name: "Arman Dwi Pangestu"
+author_title: "Web Developer"
+author_image: "/images/posts/author/arman.png"
 ---
 
 ## Heading Two

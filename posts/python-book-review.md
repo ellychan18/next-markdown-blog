@@ -1,8 +1,12 @@
 ---
-title: 'Python Book Review'
-date: 'March 7, 2021'
-excerpt: 'In this review, we will be looking at the new Python book from Oriley'
-cover_image: '/images/posts/img6.jpg'
+title: "Python Book Review"
+tag: "Programming"
+date: "March 7, 2021"
+excerpt: "In this review, we will be looking at the new Python book from Oriley"
+cover_image: "/images/posts/img6.jpg"
+author_name: "Arman Dwi Pangestu"
+author_title: "Web Developer"
+author_image: "/images/posts/author/arman.png"
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat

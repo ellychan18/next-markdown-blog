@@ -2,14 +2,40 @@ import Link from "next/link";
 
 export default function Post({ post }) {
   return (
-    <div className="card">
-      <img src={post.frontmatter.cover_image} alt="" />
-      <div className="post-date">Posted on {post.frontmatter.date}</div>
-      <h3>{post.frontmatter.title}</h3>
-      <p>{post.frontmatter.excerpt}</p>
-      <Link href={`/blog/${post.slug}`} legacyBehavior>
-        <a className="btn">Read More</a>
-      </Link>
+    <div className="md:w-4/12 w-full px-4 py-6">
+      <article>
+        <Link href={`/blog/${post.slug}`} legacyBehavior>
+          <a>
+            <img
+              src={post.frontmatter.cover_image}
+              class="w-full rounded mb-4"
+            />
+          </a>
+        </Link>
+        <div class="flex items-center text-black/60 space-x-4">
+          <div class="uppercase text-xs">{post.frontmatter.tag}</div>
+          <span>•</span>
+          <div>{post.frontmatter.date}</div>
+        </div>
+        <h2 class="text-2xl mt-4 ">
+          <Link href={`/blog/${post.slug}`} legacyBehavior>
+            <a>{post.frontmatter.title}</a>
+          </Link>
+        </h2>
+        <p class="text-black/60 mt-5 w-10/12">{post.frontmatter.excerpt}</p>
+        <div class="flex items-center mt-5">
+          <img
+            src={post.frontmatter.author_image}
+            class="w-14 h-14 rounded-full object-cover"
+          />
+          <div class="ml-4">
+            <h3>{post.frontmatter.author_name}</h3>
+            <div class="text-black/60 text-sm mt-1">
+              {post.frontmatter.author_title}
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
   );
 }

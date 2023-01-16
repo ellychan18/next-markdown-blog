@@ -1,8 +1,12 @@
 ---
 title: "Sorting Algorithm"
+tag: "Programming"
 date: "January 14 2023"
 excerpt: "Basic Sorting Algorithm"
 cover_image: "/images/posts/default.png"
+author_name: "Arman Dwi Pangestu"
+author_title: "Web Developer"
+author_image: "/images/posts/author/arman.png"
 ---
 
 ## Bubble Sort

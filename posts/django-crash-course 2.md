@@ -1,7 +1,7 @@
 ---
 title: "Django Crash Course"
 tag: "Programming"
-date: "March 5, 2021"
+date: "January 16 2023"
 excerpt: "Django is a very powerful, high level Python framework for building web applications"
 cover_image: "/images/posts/img3.jpg"
 author_name: "Arman Dwi Pangestu"

@@ -33,20 +33,54 @@ marked.setOptions({
 });
 
 export default function PostPage({
-  frontmatter: { title, date, cover_image },
+  frontmatter: {
+    title,
+    tag,
+    date,
+    cover_image,
+    author_name,
+    author_title,
+    author_image,
+  },
   slug,
   content,
 }) {
   return (
     <>
-      <Link href="/" legacyBehavior>
-        <a className="btn btn-back">Go Back</a>
-      </Link>
-      <div className="card card-page">
-        <h1 className="post-title">{title}</h1>
-        <div className="post-date">Posted on {date}</div>
-        <img src={cover_image} alt="" />
-        <div className="post-body">
+      {/* <Link href="/" legacyBehavior className="mb-10">
+        <a
+          className="rounded-lg px-4 py-3 ml-10 border-2 border-black"
+          style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
+        >
+          Go Back
+        </a>
+      </Link> */}
+
+      <div className="container mx-10 px-10 mt-5">
+        <div class="md:w-6/12 w-full mx-auto flex items-center flex-col">
+          <div class="flex items-center text-black/60 space-x-4">
+            <div class="uppercase">{tag}</div>
+            <span>•</span>
+            <div>{date}</div>
+          </div>
+          <h2 class="text-2xl mt-4 text-center">
+            <a href="/detail">{title}</a>
+          </h2>
+          <div class="flex items-center mt-5">
+            <img
+              src={author_image}
+              class="w-14 h-14 rounded-full object-cover"
+            />
+            <div class="ml-4">
+              <h3>{author_name}</h3>
+              <div class="text-black/60 text-sm mt-1">{author_title}</div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-10/12 w-full mx-auto my-10">
+          <img src={cover_image} class="w-full rounded-lg" />
+        </div>
+        <div class="w-full md:w-10/12 mx-auto mb-5">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>

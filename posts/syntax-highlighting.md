@@ -1,8 +1,12 @@
 ---
 title: "Syntax Highlighting"
+tag: "Programming"
 date: "January 15 2023"
 excerpt: "Syntax Highlighting"
 cover_image: "/images/posts/default.png"
+author_name: "Arman Dwi Pangestu"
+author_title: "Web Developer"
+author_image: "/images/posts/author/arman.png"
 ---
 
 ### PHP

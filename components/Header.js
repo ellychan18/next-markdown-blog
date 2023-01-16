@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import { FaBars, FaSearch, FaAngleDown } from "react-icons/fa";
 
 export default function Header() {
   const [dropdown, setDropdown] = useState(false);
@@ -14,41 +15,11 @@ export default function Header() {
   return (
     <header>
       <nav className="py-10">
-        <div className="container mx-auto px-10">
+        <div className="mx-auto px-10">
           <div className="flex items-center">
             <div className="w-3/12 lg:hidden">
               <button onClick={() => setOffcanvas(!offcavnas)}>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g opacity="0.4">
-                    <path
-                      d="M3 12H21"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M3 6H21"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M3 18H21"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </svg>
+                <FaBars />
               </button>
             </div>
             <div className="lg:w-2/12 w-6/12">
@@ -63,35 +34,11 @@ export default function Header() {
             </div>
             <div className="w-3/12 lg:hidden text-right">
               <button onClick={() => setSearch(!search)}>
-                <svg
-                  className="inline-block"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g opacity="0.4">
-                    <path
-                      d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M21 21L16.65 16.65"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                </svg>
+                <FaSearch />
               </button>
             </div>
             <div
-              className={`lg:w-7/12 w-full bg-gradient-to-b from-gray-600 to-gray-900 lg:bg-none fixed lg:static top-0 h-full lg:h-auto p-10 lg:p-0 transition-all ${
+              className={`lg:w-7/12 w-full bg-white fixed lg:static top-0 h-full lg:h-auto p-10 lg:p-0 transition-all ${
                 offcavnas ? "left-0" : "-left-full"
               }`}
             >
@@ -132,32 +79,19 @@ export default function Header() {
                     onClick={() => setDropdown(!dropdown)}
                   >
                     Lainnya
-                    <svg
-                      className="ml-2"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4 6L8 10L12 6"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                    <FaAngleDown
+                      className={`ml-1 ${dropdown ? "rotate-180" : ""}`}
+                    />
                   </a>
                   {dropdown && (
-                    <ul className="absolute w-[200px] bg-gray-800 rounded shadow-2xl mt-4">
+                    <ul className="absolute w-[200px] bg-black rounded shadow-2xl mt-4">
                       {dropdownList.map(({ text, href }) => (
                         <li
                           key={text}
                           className="border-b border-white/5 last:border-0"
                         >
                           <Link href={href} legacyBehavior>
-                            <a className="flex py-3 px-6 hover:bg-gray-700/60">
+                            <a className="flex py-3 px-6 hover:bg-gray-700/60 text-white">
                               {text}
                             </a>
                           </Link>
@@ -194,7 +128,7 @@ export default function Header() {
                 </svg>
               </button>
               <input
-                className="border-2 py-3 px-6 w-full lg:rounded-full rounded-lg bg-search pl-12"
+                className="border-2 py-2 px-6 w-full lg:rounded-full rounded-lg bg-search"
                 placeholder="Search ..."
               />
             </div>
