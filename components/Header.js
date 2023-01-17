@@ -144,7 +144,7 @@ export default function Header({ frontmatter }) {
                 <div
                   className={`absolute ${
                     iconSearch && "w-9/12"
-                  } border divide-y shadow bg-white ...`}
+                  } divide-y shadow bg-white mr-5 mt-3`}
                 >
                   {posts
                     .filter((val) => {
@@ -167,15 +167,30 @@ export default function Header({ frontmatter }) {
                     })
                     .map((post, index) => {
                       return (
-                        <Link
+                        <a
                           href={`/blog/${post.slug}`}
-                          key={index}
-                          legacyBehavior
+                          className={`flex flex-col items-center border rounded-lg shadow-md md:flex-row hover:bg-gray-100 ${
+                            index > 0 && "mt-5"
+                          }`}
                         >
-                          <a className="block p-2 hover:bg-indigo-50 ...">
-                            {post.slug.replace(/\-/g, " ")}
-                          </a>
-                        </Link>
+                          <img
+                            class="object-cover w-full rounded-t-lg h-25 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                            src={post.frontmatter.cover_image}
+                            alt=""
+                          />
+                          <div className="flex flex-col justify-between p-4 leading-normal">
+                            <p>
+                              {post.slug
+                                .replace(/\-/g, " ")
+                                .split(" ")
+                                .map(
+                                  (word) =>
+                                    word.charAt(0).toUpperCase() + word.slice(1)
+                                )
+                                .join(" ")}
+                            </p>
+                          </div>
+                        </a>
                       );
                     })}
                 </div>

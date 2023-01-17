@@ -8,7 +8,7 @@ export default function Post({ post }) {
           <a>
             <img
               src={post.frontmatter.cover_image}
-              className="w-full rounded mb-4"
+              className="w-full rounded-xl mb-4"
             />
           </a>
         </Link>
