@@ -82,7 +82,7 @@ export default function PostPage({
         <div className="md:w-10/12 w-full mx-auto my-10">
           <img src={cover_image} className="w-full rounded-lg" />
         </div>
-        <div className="w-full md:w-10/12 mx-auto mb-5">
+        <div className="w-full mx-auto mb-5 prose prose-zinc md:prose-lg max-w-3xl">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>

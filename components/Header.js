@@ -12,7 +12,6 @@ export default function Header({ frontmatter }) {
   // posts.map((post) => {
   //   console.log(post);
   // });
-  const [result, setResult] = useState(search);
   const dropdownList = [
     { text: "Internet", href: "/posts" },
     { text: "Books", href: "/posts" },
@@ -158,7 +157,12 @@ export default function Header({ frontmatter }) {
                           .includes(search.toLocaleLowerCase())
                       ) {
                         return val;
-                        // console.log(val.slug.replace(/\-/g, " "));
+                      } else if (
+                        val.frontmatter.tag
+                          .toLowerCase()
+                          .includes(search.toLocaleLowerCase())
+                      ) {
+                        return val;
                       }
                     })
                     .map((post, index) => {

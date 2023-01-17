@@ -127,6 +127,7 @@ ol {
   Maintainer: @highlightjs/core-team
   Version: 2021.09.0
 */
+
 pre code.hljs {
   display: block;
   overflow-x: auto;
@@ -137,7 +138,8 @@ code.hljs {
 }
 .hljs {
   color: #abb2bf;
-  background: #000;
+  /* background: #000;
+  border-radius: 7px; */
 }
 .hljs ::selection,
 .hljs::selection {
@@ -225,21 +227,11 @@ code.hljs {
 
 code {
   max-width: 100%;
-  /* font-size: 75%; */
   border-radius: 7px;
   display: inline-block;
   padding: 0.1em 0.5em;
   margin-bottom: 0.3em;
-  background-color: #282c34;
-  /*color: #abb2bf;*/
-  /* background-color: #f8f9fa; */
-  /* background: #fff; */
-  /* background: rgba(54, 57, 62, 0.4); */
-  /*color: #e74c3c;*/
-  /*color: #8b949e;*/
-  /*color: rgba(255, 255, 255, 0.55);*/
+  /* background-color: #282c34; */
   color: rgb(245, 245, 245);
-  /*border: 1px solid #E1E4E5;*/
   border: 1px solid rgba(110, 118, 129, 0.4);
-  /* box-shadow: 0.4rem 0.4rem 0 rgb(59 130 246 / 50%); */
 }

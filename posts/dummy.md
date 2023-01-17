@@ -1,7 +1,7 @@
 ---
 title: "Dummy"
 tag: "Programming"
-date: "January 18 2023"
+date: "January 16 2023"
 excerpt: "Dummy Post"
 cover_image: "/images/posts/default.png"
 author_name: "Arman Dwi Pangestu"

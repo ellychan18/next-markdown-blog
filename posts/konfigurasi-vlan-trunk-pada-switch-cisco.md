@@ -1,9 +1,9 @@
 ---
-title: "Konfigurasi VLAN Trunk Pada Switch Cisco"
+title: "Cisco - Konfigurasi VLAN Trunk Pada Switch Cisco"
 tag: "Networking"
-date: "January 16 2023"
-excerpt: "idk"
-cover_image: "/images/posts/img2.png"
+date: "January 17 2023"
+excerpt: "Pada artikel ini kita akan melakukan konfigurasi VLAN Trunk pada Switch Cisco"
+cover_image: "/images/posts/konfigurasi-vlan-trunk-pada-switch-cisco.png"
 author_name: "Arman Dwi Pangestu"
 author_title: "Web Developer"
 author_image: "/images/posts/author/arman.png"
