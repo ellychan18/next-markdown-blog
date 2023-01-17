@@ -4,6 +4,7 @@ import matter from "gray-matter";
 import { marked } from "marked";
 import Link from "next/link";
 import hljs from "highlight.js";
+import Header from "@/components/Header";
 
 // marked.setOptions({
 //   highlight: function (code, lang, callback) {
@@ -47,6 +48,7 @@ export default function PostPage({
 }) {
   return (
     <>
+      <Header />
       {/* <Link href="/" legacyBehavior className="mb-10">
         <a
           className="rounded-lg px-4 py-3 ml-10 border-2 border-black"
@@ -57,30 +59,30 @@ export default function PostPage({
       </Link> */}
 
       <div className="container mx-10 px-10 mt-5">
-        <div class="md:w-6/12 w-full mx-auto flex items-center flex-col">
-          <div class="flex items-center text-black/60 space-x-4">
-            <div class="uppercase">{tag}</div>
+        <div className="md:w-6/12 w-full mx-auto flex items-center flex-col">
+          <div className="flex items-center text-black/60 space-x-4">
+            <div className="uppercase">{tag}</div>
             <span>•</span>
             <div>{date}</div>
           </div>
-          <h2 class="text-2xl mt-4 text-center">
+          <h2 className="text-2xl mt-4 text-center">
             <a href="/detail">{title}</a>
           </h2>
-          <div class="flex items-center mt-5">
+          <div className="flex items-center mt-5">
             <img
               src={author_image}
-              class="w-14 h-14 rounded-full object-cover"
+              className="w-14 h-14 rounded-full object-cover"
             />
-            <div class="ml-4">
+            <div className="ml-4">
               <h3>{author_name}</h3>
-              <div class="text-black/60 text-sm mt-1">{author_title}</div>
+              <div className="text-black/60 text-sm mt-1">{author_title}</div>
             </div>
           </div>
         </div>
-        <div class="md:w-10/12 w-full mx-auto my-10">
-          <img src={cover_image} class="w-full rounded-lg" />
+        <div className="md:w-10/12 w-full mx-auto my-10">
+          <img src={cover_image} className="w-full rounded-lg" />
         </div>
-        <div class="w-full md:w-10/12 mx-auto mb-5">
+        <div className="w-full md:w-10/12 mx-auto mb-5">
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>

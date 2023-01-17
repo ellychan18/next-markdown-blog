@@ -2,10 +2,17 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaSearch, FaAngleDown } from "react-icons/fa";
 
-export default function Header() {
+export default function Header({ frontmatter }) {
   const [dropdown, setDropdown] = useState(false);
   const [offcavnas, setOffcanvas] = useState(false);
-  const [search, setSearch] = useState(false);
+  const [iconSearch, setIconSearch] = useState(false);
+  const [search, setSearch] = useState("");
+  const [posts, setPosts] = useState(frontmatter);
+  // console.log(`type of: ${typeof posts}`);
+  // posts.map((post) => {
+  //   console.log(post);
+  // });
+  const [result, setResult] = useState(search);
   const dropdownList = [
     { text: "Internet", href: "/posts" },
     { text: "Books", href: "/posts" },
@@ -33,7 +40,7 @@ export default function Header() {
               </Link>
             </div>
             <div className="w-3/12 lg:hidden text-right">
-              <button onClick={() => setSearch(!search)}>
+              <button onClick={() => setIconSearch(!iconSearch)}>
                 <FaSearch />
               </button>
             </div>
@@ -53,10 +60,10 @@ export default function Header() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-x"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-x"
                 >
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -104,12 +111,12 @@ export default function Header() {
             </div>
             <div
               className={`lg:w-3/12 absolute lg:static w-full left-0 px-10 lg:px-0 transition-all ${
-                search ? "top-10" : "-top-40"
+                iconSearch ? "top-10" : "-top-40"
               }`}
             >
               <button
                 className="absolute top-3 right-14 lg:hidden"
-                onClick={() => setSearch(false)}
+                onClick={() => setIconSearch(false)}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,10 +125,10 @@ export default function Header() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-x"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="feather feather-x"
                 >
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -130,7 +137,39 @@ export default function Header() {
               <input
                 className="border-2 py-2 px-6 w-full lg:rounded-full rounded-lg bg-search"
                 placeholder="Search ..."
+                onChange={(e) => {
+                  setSearch(e.target.value);
+                }}
               />
+              {search && (
+                <div
+                  className={`absolute ${
+                    iconSearch && "w-9/12"
+                  } border divide-y shadow bg-white ...`}
+                >
+                  {posts
+                    .filter((val) => {
+                      if (search === "") {
+                        return val;
+                      } else if (
+                        val.slug
+                          .toLowerCase()
+                          .includes(search.toLocaleLowerCase())
+                      ) {
+                        return val;
+                      }
+                    })
+                    .map((post) => {
+                      return (
+                        <Link href={`/blog/${post.slug}`} legacyBehavior>
+                          <a className="block p-2 hover:bg-indigo-50 ...">
+                            {post.slug}
+                          </a>
+                        </Link>
+                      );
+                    })}
+                </div>
+              )}
             </div>
           </div>
         </div>

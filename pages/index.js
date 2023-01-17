@@ -5,6 +5,7 @@ import Head from "next/head";
 import matter from "gray-matter";
 import Post from "@/components/Post";
 import { sortByDate } from "../utils";
+import Header from "@/components/Header";
 
 export default function Home({ posts }) {
   const [featured, setFeatured] = useState(posts[0]);
@@ -14,6 +15,7 @@ export default function Home({ posts }) {
       <Head>
         <title>Dev Blog</title>
       </Head>
+      <Header frontmatter={posts} />
 
       <div className="container mx-auto px-10">
         {/* Start Featured Post */}
@@ -40,17 +42,17 @@ export default function Home({ posts }) {
                   {featured.frontmatter.title}
                 </a>
               </h2>
-              <p class="text-black/60 mt-2 w-10/12">
+              <p className="text-black/60 mt-2 w-10/12">
                 {featured.frontmatter.excerpt}
               </p>
-              <div class="flex items-center mt-5">
+              <div className="flex items-center mt-5">
                 <img
                   src={featured.frontmatter.author_image}
-                  class="w-14 h-14 rounded-full object-cover"
+                  className="w-14 h-14 rounded-full object-cover"
                 />
-                <div class="ml-4">
+                <div className="ml-4">
                   <h3>{featured.frontmatter.author_name}</h3>
-                  <div class="text-black/60 text-sm mt-1">
+                  <div className="text-black/60 text-sm mt-1">
                     {featured.frontmatter.author_title}
                   </div>
                 </div>
