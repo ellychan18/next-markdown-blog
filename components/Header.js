@@ -172,6 +172,7 @@ export default function Header({ frontmatter }) {
                           className={`flex flex-col items-center border rounded-lg shadow-md md:flex-row hover:bg-gray-100 ${
                             index > 0 && "mt-5"
                           }`}
+                          key={index}
                         >
                           <img
                             class="object-cover w-full rounded-t-lg h-25 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
