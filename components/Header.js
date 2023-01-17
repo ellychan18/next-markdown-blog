@@ -159,9 +159,13 @@ export default function Header({ frontmatter }) {
                         return val;
                       }
                     })
-                    .map((post) => {
+                    .map((post, index) => {
                       return (
-                        <Link href={`/blog/${post.slug}`} legacyBehavior>
+                        <Link
+                          href={`/blog/${post.slug}`}
+                          key={index}
+                          legacyBehavior
+                        >
                           <a className="block p-2 hover:bg-indigo-50 ...">
                             {post.slug}
                           </a>
