@@ -8,29 +8,29 @@ export default function Post({ post }) {
           <a>
             <img
               src={post.frontmatter.cover_image}
-              class="w-full rounded mb-4"
+              className="w-full rounded mb-4"
             />
           </a>
         </Link>
-        <div class="flex items-center text-black/60 space-x-4">
-          <div class="uppercase text-xs">{post.frontmatter.tag}</div>
+        <div className="flex items-center text-black/60 space-x-4">
+          <div className="uppercase text-xs">{post.frontmatter.tag}</div>
           <span>•</span>
           <div>{post.frontmatter.date}</div>
         </div>
-        <h2 class="text-2xl mt-4 ">
+        <h2 className="text-2xl mt-4 ">
           <Link href={`/blog/${post.slug}`} legacyBehavior>
             <a>{post.frontmatter.title}</a>
           </Link>
         </h2>
-        <p class="text-black/60 mt-5 w-10/12">{post.frontmatter.excerpt}</p>
-        <div class="flex items-center mt-5">
+        <p className="text-black/60 mt-5 w-10/12">{post.frontmatter.excerpt}</p>
+        <div className="flex items-center mt-5">
           <img
             src={post.frontmatter.author_image}
-            class="w-14 h-14 rounded-full object-cover"
+            className="w-14 h-14 rounded-full object-cover"
           />
-          <div class="ml-4">
+          <div className="ml-4">
             <h3>{post.frontmatter.author_name}</h3>
-            <div class="text-black/60 text-sm mt-1">
+            <div className="text-black/60 text-sm mt-1">
               {post.frontmatter.author_title}
             </div>
           </div>

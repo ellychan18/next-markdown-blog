@@ -153,10 +153,12 @@ export default function Header({ frontmatter }) {
                         return val;
                       } else if (
                         val.slug
+                          .replace(/\-/g, " ")
                           .toLowerCase()
                           .includes(search.toLocaleLowerCase())
                       ) {
                         return val;
+                        // console.log(val.slug.replace(/\-/g, " "));
                       }
                     })
                     .map((post, index) => {
@@ -167,7 +169,7 @@ export default function Header({ frontmatter }) {
                           legacyBehavior
                         >
                           <a className="block p-2 hover:bg-indigo-50 ...">
-                            {post.slug}
+                            {post.slug.replace(/\-/g, " ")}
                           </a>
                         </Link>
                       );
