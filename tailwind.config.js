@@ -10,7 +10,7 @@ module.exports = {
         DEFAULT: {
           css: {
             pre: {
-              "background-color": "#000",
+              "background-color": "#282c34",
             },
           },
         },
