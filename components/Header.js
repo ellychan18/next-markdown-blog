@@ -175,7 +175,7 @@ export default function Header({ frontmatter }) {
                           key={index}
                         >
                           <img
-                            class="object-cover w-full rounded-t-lg h-25 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
+                            className="object-cover w-full rounded-t-lg h-25 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                             src={post.frontmatter.cover_image}
                             alt=""
                           />

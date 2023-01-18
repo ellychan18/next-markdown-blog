@@ -5,6 +5,7 @@ import { marked } from "marked";
 import Link from "next/link";
 import hljs from "highlight.js";
 import Header from "@/components/Header";
+import { sortByDate } from "@/utils";
 
 // marked.setOptions({
 //   highlight: function (code, lang, callback) {
@@ -45,18 +46,11 @@ export default function PostPage({
   },
   slug,
   content,
+  posts,
 }) {
   return (
     <>
-      <Header />
-      {/* <Link href="/" legacyBehavior className="mb-10">
-        <a
-          className="rounded-lg px-4 py-3 ml-10 border-2 border-black"
-          style={{ boxShadow: "0.4rem 0.4rem 0 #222" }}
-        >
-          Go Back
-        </a>
-      </Link> */}
+      <Header frontmatter={posts} />
 
       <div className="container mx-10 px-10 mt-5">
         <div className="md:w-6/12 w-full mx-auto flex items-center flex-col">
@@ -111,11 +105,30 @@ export async function getStaticProps({ params: { slug } }) {
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
 
+  const files = fs.readdirSync(path.join("posts"));
+
+  const posts = files.map((filename) => {
+    const slug = filename.replace(".md", "");
+
+    const allMarkdownWithMeta = fs.readFileSync(
+      path.join("posts", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(allMarkdownWithMeta);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
   return {
     props: {
       frontmatter,
       slug,
       content,
+      posts: posts.sort(sortByDate),
     },
   };
 }
