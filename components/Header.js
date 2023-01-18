@@ -128,6 +128,7 @@ export default function Header({ frontmatter }) {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className="feather feather-x"
+                  onClick={() => setSearch("")}
                 >
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -136,6 +137,7 @@ export default function Header({ frontmatter }) {
               <input
                 className="border-2 py-2 px-6 w-full lg:rounded-full rounded-lg bg-search"
                 placeholder="Search ..."
+                value={search}
                 onChange={(e) => {
                   setSearch(e.target.value);
                 }}
