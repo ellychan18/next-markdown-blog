@@ -64,38 +64,10 @@ Router(config)#do show ip interface brief
 
 > Hasilnya
 
-<div class="table-responsive rounded">
-<table class="table table-dark table-striped table-bordered">
-   <thead>
-      <tr>
-         <th scope="col">Interface</th>
-         <th scope="col">IP-Address</th>
-         <th scope="col">OK?</th>
-         <th scope="col">Method</th>
-         <th scope="col">Status</th>
-         <th scope="col">Protocol</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>GigabitEthernet0/0/0</td>
-         <td>unassigned</td>
-         <td>YES</td>
-         <td>unset</td>
-         <td>up</td>
-         <td>up</td>
-      </tr>
-      <tr>
-         <td>GigabitEthernet0/0/0.10</td>
-         <td>192.168.10.1</td>
-         <td>YES</td>
-         <td>manual</td>
-         <td>up</td>
-         <td>up</td>
-      </tr>
-   </tbody>
-</table>
-</div>
+| Interface               | IP-Address   | OK? | Method | Status | Protocol |
+| ----------------------- | ------------ | --- | ------ | ------ | -------- |
+| GigabitEthernet0/0/0    | unassigned   | YES | unset  | up     | up       |
+| GigabitEthernet0/0/0.10 | 192.168.10.1 | YES | manual | up     | up       |
 
 > **Tambahan**: Untuk membuat VLAN baru lakukan hal yang sama, disini saya akan menambahkan VLAN baru dengan ID nya adalah `20`
 
@@ -126,43 +98,7 @@ Router(config)#do show ip interface brief
 
 > Hasilnya
 
-<div class="table-responsive rounded">
-<table class="table table-dark table-striped table-bordered">
-   <thead>
-      <tr>
-         <th scope="col">Interface</th>
-         <th scope="col">IP-Address</th>
-         <th scope="col">OK?</th>
-         <th scope="col">Method</th>
-         <th scope="col">Status</th>
-         <th scope="col">Protocol</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>GigabitEthernet0/0/0</td>
-         <td>unassigned</td>
-         <td>YES</td>
-         <td>unset</td>
-         <td>up</td>
-         <td>up</td>
-      </tr>
-      <tr>
-         <td>GigabitEthernet0/0/0.10</td>
-         <td>192.168.10.1</td>
-         <td>YES</td>
-         <td>manual</td>
-         <td>up</td>
-         <td>up</td>
-      </tr>
-      <tr>
-         <td>GigabitEthernet0/0/0.20</td>
-         <td>192.168.20.1</td>
-         <td>YES</td>
-         <td>manual</td>
-         <td>up</td>
-         <td>up</td>
-      </tr>
-   </tbody>
-</table>
-</div>
+| Interface               | IP-Address   | OK? | Method | Status | Protocol |
+| ----------------------- | ------------ | --- | ------ | ------ | -------- |
+| GigabitEthernet0/0/0    | unassigned   | YES | unset  | up     | up       |
+| GigabitEthernet0/0/0.20 | 192.168.20.1 | YES | manual | up     | up       |

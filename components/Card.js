@@ -5,6 +5,10 @@ export default function Card({ posts }) {
   const [featured, setFeatured] = useState(posts[0]);
   const [cards, setCards] = useState(posts.slice(1));
 
+  if (!featured) {
+    return "";
+  }
+
   return (
     <div className="container mx-auto px-10">
       {/* Start Featured Post */}

@@ -79,6 +79,11 @@ export default function Header({ frontmatter }) {
                     <a className="hover:underline">Programming</a>
                   </Link>
                 </li>
+                <li>
+                  <Link href="/linux" legacyBehavior>
+                    <a className="hover:underline">Linux</a>
+                  </Link>
+                </li>
                 <li className="relative">
                   <a
                     className="hover:underline cursor-pointer flex items-center"
@@ -145,7 +150,7 @@ export default function Header({ frontmatter }) {
               {search && (
                 <div
                   className={`absolute ${
-                    iconSearch && "w-9/12"
+                    iconSearch && "w-10/12"
                   } divide-y shadow mr-5 mt-3`}
                 >
                   {posts
@@ -171,7 +176,7 @@ export default function Header({ frontmatter }) {
                       return (
                         <a
                           href={`/blog/${post.slug}`}
-                          className={`flex flex-col items-center border rounded-lg shadow-md md:flex-row bg-black hover:bg-gray-700`}
+                          className={`flex flex-col items-center border rounded-lg shadow-md md:flex-row bg-black hover:bg-gray-900`}
                           key={index}
                         >
                           <img

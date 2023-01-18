@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import matter from "gray-matter";
 import { sortByDate } from "@/utils";
 import Card from "@/components/Card";
+import JumpToTop from "@/components/JumpToTop";
 
 export default function Networking({ posts }) {
   const programming = posts.filter((val) => {
@@ -15,6 +16,7 @@ export default function Networking({ posts }) {
     <>
       <Header frontmatter={posts} />
       <Card posts={programming} />
+      <JumpToTop />
     </>
   );
 }

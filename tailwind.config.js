@@ -11,20 +11,21 @@ module.exports = {
           css: {
             pre: {
               "background-color": "#282c34",
+              "font-family": "Fira Code, monospace",
             },
             p: {
-              '&::before': {
+              "&::before": {
                 content: '"" !important',
               },
-              '&::after': {
+              "&::after": {
                 content: '"" !important',
               },
             },
             code: {
-              '&::before': {
+              "&::before": {
                 content: '"" !important',
               },
-              '&::after': {
+              "&::after": {
                 content: '"" !important',
               },
             },
