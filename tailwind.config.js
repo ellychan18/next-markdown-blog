@@ -12,6 +12,22 @@ module.exports = {
             pre: {
               "background-color": "#282c34",
             },
+            p: {
+              '&::before': {
+                content: '"" !important',
+              },
+              '&::after': {
+                content: '"" !important',
+              },
+            },
+            code: {
+              '&::before': {
+                content: '"" !important',
+              },
+              '&::after': {
+                content: '"" !important',
+              },
+            },
           },
         },
       },
