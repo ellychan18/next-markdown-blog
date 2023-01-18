@@ -70,12 +70,12 @@ export default function Header({ frontmatter }) {
               </button>
               <ul className="lg:space-x-14 flex lg:items-center flex-col lg:flex-row space-y-4 lg:space-y-0">
                 <li>
-                  <Link href="/posts" legacyBehavior>
+                  <Link href="/networking" test="Hello World" legacyBehavior>
                     <a className="hover:underline">Networking</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/posts" legacyBehavior>
+                  <Link href="/programming" legacyBehavior>
                     <a className="hover:underline">Programming</a>
                   </Link>
                 </li>
@@ -144,7 +144,7 @@ export default function Header({ frontmatter }) {
                 <div
                   className={`absolute ${
                     iconSearch && "w-9/12"
-                  } divide-y shadow bg-white mr-5 mt-3`}
+                  } divide-y shadow mr-5 mt-3`}
                 >
                   {posts
                     .filter((val) => {
@@ -169,9 +169,7 @@ export default function Header({ frontmatter }) {
                       return (
                         <a
                           href={`/blog/${post.slug}`}
-                          className={`flex flex-col items-center border rounded-lg shadow-md md:flex-row hover:bg-gray-100 ${
-                            index > 0 && "mt-5"
-                          }`}
+                          className={`flex flex-col items-center border rounded-lg shadow-md md:flex-row bg-black hover:bg-gray-700`}
                           key={index}
                         >
                           <img
@@ -180,7 +178,7 @@ export default function Header({ frontmatter }) {
                             alt=""
                           />
                           <div className="flex flex-col justify-between p-4 leading-normal">
-                            <p>
+                            <p className="text-white">
                               {post.slug
                                 .replace(/\-/g, " ")
                                 .split(" ")
