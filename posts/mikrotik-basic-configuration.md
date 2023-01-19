@@ -9,23 +9,6 @@ author_title: "Web Developer"
 author_image: "/images/posts/author/arman.png"
 ---
 
-<!-- - [Router Identity](#Router%20Identity)
-- [Clock](#Clock)
-- [Security](#Security)
-  - [User Authentication](#User%20Authentication)
-  - [IP Services](#IP%20Services)
-- [Membuat Jaringan WAN](#Membuat%20Jaringan%20WAN)
-  - [DHCP Client](#DHCP%20Client)
-  - [Static IP](#Static%20IP)
-    - [Static Address](#Static%20Address)
-    - [Static Route](#Static%20Route)
-    - [Static DNS](#Static%20DNS)
-  - [PPPoE Client](#PPPoE%20Client)
-- [Membuat Jaringan LAN](membuat-jaringan-lan)
-  - [Membuat Network Baru](membuat-network-baru)
-  - [Membuat DHCP Server](membuat-dhcp-server)
-  - [Menambahkan Firewall NAT untuk ke Internet](menambahkan-firewall-nat-untuk-ke-internet) -->
-
 ## Router Identity
 
 Router Identity merupakan nama identitas dari Router atau bisa disebut juga sebagai `Router Alias`
@@ -179,68 +162,16 @@ Karena untuk masuk atau me-remote router mikrotik tidak hanya melalu winbox, ole
 
 Disini saya akan menonaktifkan service port yang tidak diperlukan dan mengganti default service port yang akan digunakan:
 
-<div class="table-responsive rounded">
-    <table class="table table-dark table-striped table-bordered">
-      <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Port</th>
-          <th scope="col">Status</th>
-          <th scope="col">Keterangan</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>api</td>
-          <td>8728</td>
-          <td>Disable</td>
-          <td>Tidak akan digunakan</td>
-        </tr>
-        <tr>
-          <td>api-ssl</td>
-          <td>8729</td>
-          <td>Disable</td>
-          <td>Tidak akan digunakan</td>
-        </tr>
-       <tr>
-          <td>ftp</td>
-          <td>21</td>
-          <td>Disable</td>
-          <td>Tidak akan digunakan</td>
-        </tr>
-       <tr>
-          <td>ssh</td>
-          <td>8022</td>
-          <td>Enable</td>
-          <td>Default Port: 22 (Enable karena digunakan untuk remote melalui SSH)</td>
-      </tr>
-       <tr>
-          <td>telnet</td>
-          <td>23</td>
-          <td>Disable</td>
-          <td>Tidak akan digunakan</td>
-        </tr>
-       <tr>
-          <td>winbox</td>
-          <td>9291</td>
-          <td>Enable</td>
-          <td>Default Port: 8291 (Enable karena digunakan untuk remote melalui WinBox)</td>
-        </tr>
-       <tr>
-          <td>www</td>
-          <td>8000</td>
-          <td>Enable</td>
-          <td>Default Port: 80 (Enable karena digunakan untuk remote melalui WebFig)</td>
-        </tr>
-       <tr>
-          <td>www-ssl</td>
-          <td>443</td>
-          <td>Disable</td>
-          <td>Tidak akan digunakan</td>
-        </tr>
-      </tbody>
-    </table>
-</div>
+| Name    | Port | Status  | Keterangan                                                               |
+| ------- | ---- | ------- | ------------------------------------------------------------------------ |
+| api     | 8728 | Disable | Tidak akan digunakan                                                     |
+| api-ssl | 8729 | Disable | Tidak akan digunakan                                                     |
+| ftp     | 21   | Disable | Tidak akan digunakan                                                     |
+| ssh     | 8022 | Enable  | Default Port: 22 (Enable karena digunakan untuk remote melalui SSH)      |
+| telnet  | 23   | Disable | Tidak akan digunakan                                                     |
+| winbox  | 9292 | Enable  | Default Port: 8292 (Enable karena digunakan untuk remote melalui WinBox) |
+| www     | 8000 | Enable  | Default Port: 80 (Enable karena digunakan untuk remote melalui WebFig)   |
+| www-ssl | 443  | Disable | Tidak akan digunakan                                                     |
 
 <a href="https://user-images.githubusercontent.com/64394320/166418704-424efdef-3302-4d7a-a295-1eb61e4e84b0.png" target="_blank">
     <img src="https://user-images.githubusercontent.com/64394320/166418704-424efdef-3302-4d7a-a295-1eb61e4e84b0.png" alt="IP Services" class="img-fluid rounded mx-auto d-block" />
@@ -294,30 +225,9 @@ sesuaikan dengan port yang anda gunakan untuk terhubung ke ISP (biasanya atau de
 
 Jika `DHCP Client` berhasil maka akan muncul informasi sebagai berikut:
 
-<div class="table-responsive rounded">
-    <table class="table table-dark table-striped table-bordered">
-      <thead>
-        <tr>
-          <th scope="col">Interface</th>
-          <th scope="col">Use Peer DNS</th>
-          <th scope="col">Use Default Route</th>
-          <th scope="col">IP Address</th>
-          <th scope="col">Expires After</th>
-          <th scope="col">Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>ether1</td>
-          <td>yes</td>
-          <td>yes</td>
-          <td>192.168.20.254/24 (Tergantung dari ISP nya)</td>
-          <td>00:10:00 (Tergantung dari ISP nya)</td>
-          <td>bound</td>
-        </tr>
-      </tbody>
-    </table>
-</div>
+| Interface | Use Peer DNS | Use Default Route | IP Address                                  | Expires After                      | Status |
+| --------- | ------------ | ----------------- | ------------------------------------------- | ---------------------------------- | ------ |
+| ether1    | yes          | yes               | 192.168.20.254/24 (Tergantung dari ISP nya) | 00:10:00 (Tergantung dari ISP nya) | bound  |
 
 <a href="https://user-images.githubusercontent.com/64394320/166424236-60b45e63-7b00-4188-b01d-08edb7ff1684.png" target="_blank">
     <img src="https://user-images.githubusercontent.com/64394320/166424236-60b45e63-7b00-4188-b01d-08edb7ff1684.png" alt="DHCP Information" class="img-fluid rounded mx-auto d-block" />

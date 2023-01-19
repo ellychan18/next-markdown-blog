@@ -51,76 +51,15 @@ Switch(config)#do show vlan brief
   <img src="https://i.ibb.co/HV2CYBw/image.png" alt="https://i.ibb.co/HV2CYBw/image.png" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">VLAN</th>
-                <th scope="col">Name</th>
-                <th scope="col">Status</th>
-                <th scope="col">Ports</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>default</td>
-                <td>active</td>
-                <td>
-                    Fa0/1, Fa0/2, Fa0/3, Fa0/4 <br>
-                    Fa0/5, Fa0/6, Fa0/7, Fa0/8 <br>
-                    Fa0/9, Fa0/10, Fa0/11, Fa0/12 <br>
-                    Fa0/13, Fa0/14, Fa0/15, Fa0/16 <br>
-                    Fa0/17, Fa0/18, Fa0/19, Fa0/20 <br>
-                    Fa0/21, Fa0/22, Fa0/23, Fa0/24 <br>
-                Gig0/1, Gig0/2
-                </td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>ruang-guru</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td>ruang-meeting</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>1002</td>
-                <td>fddi-default</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>1003</td>
-                <td>token-ring-default</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>1004</td>
-                <td>fddinet-default</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>1005</td>
-                <td>trnet-default</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+| VLAN | Name               | Status | Ports                                                                                                                                                                            |
+| ---- | ------------------ | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1    | default            | active | Fa0/1, Fa0/2, Fa0/3, Fa0/4 Fa0/5, Fa0/6, Fa0/7, Fa0/8 Fa0/9, Fa0/10, Fa0/11, Fa0/12 Fa0/13, Fa0/14, Fa0/15, Fa0/16 Fa0/17, Fa0/18, Fa0/19, Fa0/20 Fa0/21, Fa0/22, Fa0/23, Fa0/24 |
+| 10   | ruang-guru         | active |                                                                                                                                                                                  |
+| 20   | ruang-meeting      | active |                                                                                                                                                                                  |
+| 1002 | fddi-default       | active |                                                                                                                                                                                  |
+| 1003 | token-ring-default | active |                                                                                                                                                                                  |
+| 1004 | fddinet-default    | active |                                                                                                                                                                                  |
+| 1005 | trnet-default      | active |                                                                                                                                                                                  |
 
 - Memberikan VLAN `10` ke PC0 yang terhubung dengan interface `fa0/1`
 
@@ -168,77 +107,15 @@ Switch(config)#do show vlan brief
   <img src="https://i.ibb.co/rZCw5RT/image.png" alt="https://i.ibb.co/rZCw5RT/image.png" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">VLAN</th>
-                <th scope="col">Name</th>
-                <th scope="col">Status</th>
-                <th scope="col">Ports</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>default</td>
-                <td>active</td>
-                <td>
-                    Fa0/5, Fa0/6, Fa0/7, Fa0/8 <br>
-                    Fa0/9, Fa0/10, Fa0/11, Fa0/12 <br>
-                    Fa0/13, Fa0/14, Fa0/15, Fa0/16 <br>
-                    Fa0/17, Fa0/18, Fa0/19, Fa0/20 <br>
-                    Fa0/21, Fa0/22, Fa0/23, Fa0/24 <br>
-                Gig0/1, Gig0/2
-                </td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>ruang-guru</td>
-                <td>active</td>
-                <td>
-                    Fa0/1, Fa0/2
-                </td>
-            </tr>
-            <tr>
-                <td>20</td>
-                <td>ruang-meeting</td>
-                <td>active</td>
-                <td>
-                    Fa0/3, Fa0/4
-                </td>
-            </tr>
-            <tr>
-                <td>1002</td>
-                <td>fddi-default</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>1003</td>
-                <td>token-ring-default</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>1004</td>
-                <td>fddinet-default</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-            <tr>
-                <td>1005</td>
-                <td>trnet-default</td>
-                <td>active</td>
-                <td>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+| VLAN | Name               | Status | Ports                                                                                                                  |
+| ---- | ------------------ | ------ | ---------------------------------------------------------------------------------------------------------------------- |
+| 1    | default            | active | Fa0/5, Fa0/6, Fa0/7, Fa0/8 Fa0/9, Fa0/10, Fa0/11, Fa0/12 Fa0/13, Fa0/14, Fa0/15, Fa0/16 Fa0/21, Fa0/22, Fa0/23, Fa0/24 |
+| 10   | ruang-guru         | active | Fa0/1, Fa0/2                                                                                                           |
+| 20   | ruang-meeting      | active | Fa0/3, Fa0/4                                                                                                           |
+| 1002 | fddi-default       | active |                                                                                                                        |
+| 1003 | token-ring-default | active |                                                                                                                        |
+| 1004 | fddinet-default    | active |                                                                                                                        |
+| 1005 | trnet-default      | active |                                                                                                                        |
 
 <a href="https://i.ibb.co/vJM1SBV/image.png" target="_blank">
   <img src="https://i.ibb.co/vJM1SBV/image.png" alt="https://i.ibb.co/vJM1SBV/image.png" class="img-fluid rounded mx-auto d-block" />

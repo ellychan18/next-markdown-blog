@@ -53,29 +53,10 @@ Switch-2(config)#
 
 > Switch 1
 
-<div class="table-responsive rounded">
-<table class="table table-dark table-striped table-bordered">
-   <thead>
-      <tr>
-         <th scope="col">Perangkat</th>
-         <th scope="col">Terhubung ke interface switch</th>
-         <th scope="col">VLAN ID</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>PC0</td>
-         <td>FastEthernet0/2</td>
-         <td>10</td>
-      </tr>
-      <tr>
-         <td>PC1</td>
-         <td>FastEthernet0/3</td>
-         <td>20</td>
-      </tr>
-   </tbody>
-</table>
-</div>
+| Perangkat | Terhubung ke interface switch | VLAN ID |
+| --------- | ----------------------------- | ------- |
+| PC0       | FastEthernet0/2               | 10      |
+| PC1       | FastEthernet0/3               | 20      |
 
 ```shell
 Switch-1(config)#interface fastEthernet 0/2
@@ -91,29 +72,10 @@ Switch-1(config)#
 
 > Switch 2
 
-<div class="table-responsive rounded">
-<table class="table table-dark table-striped table-bordered">
-   <thead>
-      <tr>
-         <th scope="col">Perangkat</th>
-         <th scope="col">Terhubung ke interface switch</th>
-         <th scope="col">VLAN ID</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>PC2</td>
-         <td>FastEthernet0/2</td>
-         <td>10</td>
-      </tr>
-      <tr>
-         <td>PC3</td>
-         <td>FastEthernet0/3</td>
-         <td>20</td>
-      </tr>
-   </tbody>
-</table>
-</div>
+| Perangkat | Terhubung ke interface switch | VLAN ID |
+| --------- | ----------------------------- | ------- |
+| PC2       | FastEthernet0/2               | 10      |
+| PC3       | FastEthernet0/3               | 20      |
 
 ```shell
 Switch-2(config)#interface fastEthernet0/2
