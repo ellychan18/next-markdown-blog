@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import Link from "next/link";
+import Head from "next/head";
 import hljs from "highlight.js";
 import Header from "@/components/Header";
 import { sortByDate } from "@/utils";
@@ -41,6 +42,7 @@ export default function PostPage({
     title,
     tag,
     date,
+    excerpt,
     cover_image,
     author_name,
     author_title,
@@ -52,6 +54,32 @@ export default function PostPage({
 }) {
   return (
     <>
+      <Head>
+        <title>Arman Blog | {title}</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        {/* Open Graph */}
+        <meta property="og:title" content={title} />
+        <meta name="author" content={author_name} />
+        <meta property="og:locale" content="id" />
+        <meta name="description" content={excerpt} />
+        <meta property="og:description" content={excerpt} />
+        {/* <link rel="canonical" href="<?= getLink("Domain"); ?>/post/post.php?id=<?= $id; ?>" /> */}
+
+        {/* <meta property="og:url" content="<?= getLink("Domain"); ?>/post/post.php?id=<?= $id; ?>" /> */}
+        <meta property="og:site_name" content={author_name} />
+        <meta property="og:country-name" content="Indonesia" />
+        <meta property="og:image" content={cover_image} />
+        <meta property="og:image:width" content="460" />
+        <meta property="og:image:height" content="230" />
+        {/* <meta property="og:type" content="<?= getLink("Domain"); ?>/post/post.php?id=<?= $id; ?>" /> */}
+        <meta property="og:image:type" content="image/jpeg" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:author" content={author_name} />
+        <meta property="twitter:image:src" content={cover_image} />
+      </Head>
       <Header frontmatter={posts} />
 
       <div className="container mx-10 px-10 mt-5">

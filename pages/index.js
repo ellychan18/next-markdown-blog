@@ -11,7 +11,7 @@ export default function Home({ posts }) {
   return (
     <>
       <Head>
-        <title>Dev Blog</title>
+        <title>Arman Blog</title>
       </Head>
       <Header frontmatter={posts} />
 
