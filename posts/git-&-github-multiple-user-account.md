@@ -9,23 +9,7 @@ author_title: "Web Developer"
 author_image: "/images/posts/author/arman.png"
 ---
 
-<h4 class="mt-4">
-   <i class="fas fa-book me-2"></i> Daftar Isi:
-</h4>
-
-<a href="#generate-ssh-keys">1. Generate SSH Keys</a>
-<br>
-<a href="#menambahkan-ssh-keys-baru-ke-akun-github">2. Menambahkan SSH Keys baru ke akun GitHub yang dipakai</a>
-<br>
-<a href="#mendaftarkan-ssh-keys-baru-dengan-ssh-agent">3. Mendaftarkan SSH Keys baru dengan ssh-agent</a>
-<br>
-<a href="#membuat-file-configurasi-ssh">4. Membuat File Configurasi SSH</a>
-<br>
-<a href="#troubleshooting-github-authority-commit">5. Troubleshooting GtiHub Authority Commit</a>
-<br>
-<br>
-
-#### <a href="#generate-ssh-keys" name="generate-ssh-keys">1. Generate SSH Keys</a>
+## Generate SSH Keys
 
 Untuk membuat atau mengenerate SSH Keys jalankan command berikut:
 
@@ -100,7 +84,7 @@ Sekarang kita mempunyai 2 SSH Keys berbeda yang sudah dibuat:
    <img src="https://i.ibb.co/R0xyV5T/Screenshot-2022-01-11-12-14-21-X.png" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-#### <a href="#menambahkan-ssh-keys-baru-ke-akun-github" name="menambahkan-ssh-keys-baru-ke-akun-github">2. Menambahkan SSH Keys baru ke akun GitHub yang dipakai</a>
+## Menambahkan SSH Keys baru ke akun GitHub yang dipakai
 
 Kita sudah mempunyai SSH Public Key, selanjutnya kita harus menambahkan Public Key ke dalam akun GitHub agar GitHub akun mempercayai key yang telah kita buat. Menggunakan ini nantinya tidak membutuhkan mengetik username dan password setiap kali melakukan git push.
 
@@ -127,7 +111,7 @@ dan login kedalam GitHub yang ingin ditambahkan:
    <img src="https://i.ibb.co/rFDw5Kk/image.png" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-#### <a href="#mendaftarkan-ssh-keys-baru-dengan-ssh-agent" name="mendaftarkan-ssh-keys-baru-dengan-ssh-agent">3. Mendaftarkan SSH Keys baru dengan ssh-agent</a>
+## Mendaftarkan SSH Keys baru dengan ssh-agent
 
 Untuk menggunakan keys, kita harus mendaftarkannya telebih dahulu menggunakan `ssh-agent` di mesin kita. Pastikan `ssh-agent` telah berjalan menggunakan perintah:
 
@@ -174,7 +158,7 @@ Bagian ini adalah bagian yang penting dan kita mempunyai dua tindakan yang sama 
 
 Untuk melakukannya kita menggunakan File Configuration SSH (<a href="#membuat-file-configurasi-ssh"><b>Step 4</b></a>) dan hanya satu yang aktif SSH Key pada `ssh-agent` di waktu yang sama
 
-#### <a href="#membuat-file-configurasi-ssh" name="membuat-file-configurasi-ssh">4. Membuat File Configurasi SSH</a>
+## Membuat File Configurasi SSH
 
 Disini kita benar - benar menambahkan aturan Configurasi SSH untuk host yang berbeda, menyatakan file identitas mana yang digunakan untuk domain mana.
 
@@ -211,4 +195,4 @@ Configurasi diatas befungsi pada `ssh-agent` untuk:
 - Menggunakan <b>`id_rsa_tutorial`</b> sebagai kunci untuk apapun Git URL menggunakan `@github.com`
 - Menggunakan <b>`id_rsa_tutorial2`</b> sebagai kunci untuk apapun Git URL menggunakan `@github.com-tutorial2`
 
-#### <a href="#troubleshooting-github-authority-commit" name="troubleshooting-github-authority-commit">5. Troubleshooting GitHub Authority Commit</a>
+## Troubleshooting GitHub Authority Commit

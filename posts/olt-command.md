@@ -9,28 +9,7 @@ author_title: "Web Developer"
 author_image: "/images/posts/author/arman.png"
 ---
 
-<h4 class="mt-4">
-   <i class="fas fa-book me-2"></i> Daftar Isi:
-</h4>
-
-- [Cek ONT Uptime dan History](#cek-ont-uptime-dan-history)
-- [Cek Detail Config di Interface ke arah ONT](#cek-detail-config-di-interface-ke-arah-ont)
-- [Cek Signal Fiber Optic](#cek-signal-fiber-optic)
-- [Menampilkan MAC Perangkat Yang Terhubung ke ONU](#menampilkan-mac-perangkat-yang-terhubung-ke-onu)
-- [Cara Mengecek IP Address ONU](#cara-mengecek-ip-address-onu)
-- [Menampilkan Semua State OLT](#menampilkan-semua-state-olt)
-- [Menampilkan State Satu OLT](#menampilkan-state-satu-olt)
-- [Menampilkan Signal RX (Download) Satu OLT](#menampilkan-signal-rx-atau-download-satu-olt)
-- [Menampilkan Signal TX (Upload) Satu OLT](#menampilkan-signal-tx-atau-upload-satu-olt)
-- [Menampilkan Status Interface Backbone xgei (10G)](#menampilkan-status-interface-backbone-xgei-10G)
-- [Menampilkan Informasi Interface Ethernet](#menampilkan-informasi-interface-ethernet)
-- [Masuk ke Mode PON Management](#masuk-ke-mode-PON-Management)
-- [Menampilkan Informasi PON Management](#menampilkan-informasi-PON-Management)
-- [Menghapus VLAN pada Port Ethernet](#menghapus-VLAN-pada-port-ethernet)
-- [Menambahkan VLAN dengan Mode Trunk pada Port Ethernet](#menambahkan-vlan-dengan-mode-trunk-pada-port-ethernet)
-- [Menambahkan VLAN pada Interface Ethernet](#menambahkan-vlan-pada-interface-ethernet)
-
-## <a name="cek-ont-uptime-dan-history" href="#cek-ont-uptime-dan-history"><i class="fas fa-link me-2 text-dark"></i></a>Cek ONT Uptime dan History
+## Cek ONT Uptime dan History
 
 - Command
 
@@ -79,7 +58,7 @@ ONU interface:         gpon-onu_1/1/1:1
   10   0000-00-00 00:00:00    0000-00-00 00:00:00
 ```
 
-## <a name="cek-detail-config-di-interface-ke-arah-ont" href="#cek-detail-config-di-interface-ke-arah-ont"><i class="fas fa-link me-2 text-dark"></i></a>Cek Detail Config di Interface ke arah ONT
+## Cek Detail Config di Interface ke arah ONT
 
 - Command
 
@@ -108,7 +87,7 @@ interface gpon-onu_1/1/1:1
 end
 ```
 
-## <a name="cek-signal-fiber-optic" href="#cek-signal-fiber-optic"><i class="fas fa-link me-2 text-dark"></i></a>Cek Signal Fiber Optic
+## Cek Signal Fiber Optic
 
 - Command
 
@@ -126,7 +105,7 @@ show pon power attenuation gpon-onu_1/1/1:1
  down    Tx :5.369(dbm)        Rx:-16.676(dbm)      22.045(dB)
 ```
 
-## <a name="menampilkan-mac-perangkat-yang-terhubung-ke-onu" href="#menampilkan-mac-perangkat-yang-terhubung-ke-onu"><i class="fas fa-link me-2 text-dark"></i></a>Menampilkan MAC Perangkat Yang Terhubung ke ONU
+## Menampilkan MAC Perangkat Yang Terhubung ke ONU
 
 - Command
 
@@ -144,7 +123,7 @@ Mac address      Vlan   Type      Port                         Vc
 8cdc.0294.a5cd   88     Dynamic   gpon-onu_1/1/1:1          vport 2
 ```
 
-## <a name="cara-mengecek-ip-address-onu" href="#cara-mengecek-ip-address-onu"><i class="fas fa-link me-2 text-dark"></i></a>Cara Mengecek IP Address ONU
+## Cara Mengecek IP Address ONU
 
 - Command
 
@@ -178,7 +157,7 @@ MAC address:    xxxx.xxxx.xxxx
 IP host id:     1
 ```
 
-## <a name="menampilkan-semua-state-olt" href="#menampilkan-semua-state-olt"><i class="fas fa-link me-2 text-dark"></i></a>Menampilkan Semua State OLT
+## Menampilkan Semua State OLT
 
 - Command
 
@@ -221,7 +200,7 @@ gpon-onu_1/1/2:26      enable       enable       operation    working
 gpon-onu_1/1/2:27      enable       enable       operation    working
 ```
 
-## <a name="menampilkan-state-satu-olt" href="#menampilkan-state-satu-olt"><i class="fas fa-link me-2 text-dark"></i></a>Menampilkan State Satu OLT
+## Menampilkan State Satu OLT
 
 - Command
 
@@ -248,7 +227,7 @@ gpon-onu_1/1/1:13      enable       enable       operation    working
 gpon-onu_1/1/1:14      enable       enable       operation    working
 ```
 
-## <a name="menampilkan-signal-rx-atau-download-satu-olt" href="#menampilkan-signal-rx-atau-download-satu-olt"><i class="fas fa-link me-2 text-dark"></i></a>Menampilkan Signal RX (Download) Satu OLT
+## Menampilkan Signal RX (Download) Satu OLT
 
 - Command
 
@@ -275,7 +254,7 @@ gpon-onu_1/1/1:13   -20.810(dbm)
 gpon-onu_1/1/1:14   -17.826(dbm)
 ```
 
-## <a name="menampilkan-signal-tx-atau-upload-satu-olt" href="#menampilkan-signal-tx-atau-upload-satu-olt"><i class="fas fa-link me-2 text-dark"></i></a>Menampilkan Signal TX (Upload) Satu OLT
+## Menampilkan Signal TX (Upload) Satu OLT
 
 - Command
 
@@ -302,7 +281,7 @@ gpon-onu_1/1/1:13   2.136(dbm)
 gpon-onu_1/1/1:14   2.404(dbm)
 ```
 
-## <a name="menampilkan-status-interface-backbone-xgei-10G" href="#menampilkan-status-interface-backbone-xgei-10G"><i class="fas fa-link me-2 text-dark"></i></a>Menampilkan Status Interface Backbone xgei (10G)
+## Menampilkan Status Interface Backbone xgei (10G)
 
 - Command
 
@@ -322,7 +301,7 @@ xgei_1/4/2 is up,  line protocol is up
   scramble payload-enable
 ```
 
-## <a name="menampilkan-informasi-interface-ethernet" href="#menampilkan-informasi-interface-ethernet"><i class="fas fa-link me-2 text-dark"></i></a>Menampilkan Informasi Interface Ethernet
+## Menampilkan Informasi Interface Ethernet
 
 - Command
 
@@ -364,7 +343,7 @@ Wiring :       dce
 BridgeOrIP:    either
 ```
 
-## <a name="masuk-ke-mode-PON-Management" href="#masuk-ke-mode-PON-Management"><i class="fas fa-link me-2 text-dark"></i></a>Masuk ke mode PON Management
+## Masuk ke mode PON Management
 
 - Command
 
@@ -378,7 +357,7 @@ pon-onu-mng gpon-onu_1/1/7:2
 host(gpon-onu-mng)#
 ```
 
-## <a name="menampilkan-informasi-PON-Management" href="#menampilkan-informasi-PON-Management"><i class="fas fa-link me-2 text-dark"></i></a>Menampilkan Informasi PON Management
+## Menampilkan Informasi PON Management
 
 - Command
 
@@ -413,7 +392,7 @@ pon-onu-mng gpon-onu_1/1/7:2
 !
 ```
 
-## <a name="menghapus-VLAN-pada-port-ethernet" href="#menghapus-VLAN-pada-port-ethernet"><i class="fas fa-link me-2 text-dark"></i></a>Menghapus VLAN pada Port Ethernet
+## Menghapus VLAN pada Port Ethernet
 
 - Command
 
@@ -462,7 +441,7 @@ pon-onu-mng gpon-onu_1/1/7:2
 !
 ```
 
-## <a name="menambahkan-vlan-dengan-mode-trunk-pada-port-ethernet" href="#menambahkan-vlan-dengan-mode-trunk-pada-port-ethernet"><i class="fas fa-link me-2 text-dark"></i></a>Menambahkan VLAN dengan mode trunk pada port Ethernet
+## Menambahkan VLAN dengan mode trunk pada port Ethernet
 
 - Command
 
@@ -491,7 +470,7 @@ pon-onu-mng gpon-onu_1/1/7:2
 !
 ```
 
-## <a name="menambahkan-vlan-pada-interface-ethernet" href="#menambahkan-vlan-pada-interface-ethernet"><i class="fas fa-link me-2 text-dark"></i></a>Menambahkan VLAN pada Interface Ethernet
+## Menambahkan VLAN pada Interface Ethernet
 
 - Command
 

@@ -9,7 +9,7 @@ author_title: "Web Developer"
 author_image: "/images/posts/author/arman.png"
 ---
 
-- [Router Identity](#Router%20Identity)
+<!-- - [Router Identity](#Router%20Identity)
 - [Clock](#Clock)
 - [Security](#Security)
   - [User Authentication](#User%20Authentication)
@@ -24,9 +24,9 @@ author_image: "/images/posts/author/arman.png"
 - [Membuat Jaringan LAN](membuat-jaringan-lan)
   - [Membuat Network Baru](membuat-network-baru)
   - [Membuat DHCP Server](membuat-dhcp-server)
-  - [Menambahkan Firewall NAT untuk ke Internet](menambahkan-firewall-nat-untuk-ke-internet)
+  - [Menambahkan Firewall NAT untuk ke Internet](menambahkan-firewall-nat-untuk-ke-internet) -->
 
-### Router Identity
+## Router Identity
 
 Router Identity merupakan nama identitas dari Router atau bisa disebut juga sebagai `Router Alias`
 pada bagian ini kita akan mengubah value dari Router Identity nya yang dimana berfungsi sebagai berikut:
@@ -64,7 +64,7 @@ Untuk melihat apakah identity berhasil berubah, kita bisa melihat dibagian
     <img src="https://user-images.githubusercontent.com/64394320/166405384-cef1ea35-b5d6-4bc7-bdc9-ed20c9fb950d.png" alt="Login WinBox" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-### Clock
+## Clock
 
 Clock merupakan jam atau waktu saat ini pada Router, untuk mengubah nya kita cukup pergi
 ke menu `/System/Clock`
@@ -89,7 +89,7 @@ Untuk melihat apakah clock atau jam berhasil berubah kita bisa menyamakan dengan
     <img src="https://user-images.githubusercontent.com/64394320/166406227-243e1849-255b-403a-877e-23cef1d19599.png" alt="Clock" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-### Security
+## Security
 
 Disini kita akan mem-proteksi router dari sisi keamanan (walaupun ini hanya dasar nya saja)
 
@@ -246,7 +246,7 @@ Disini saya akan menonaktifkan service port yang tidak diperlukan dan mengganti 
     <img src="https://user-images.githubusercontent.com/64394320/166418704-424efdef-3302-4d7a-a295-1eb61e4e84b0.png" alt="IP Services" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-### Membuat Jaringan WAN
+## Membuat Jaringan WAN
 
 Pada tahap ini kita akan membuat router dapat terhubung ke internet, untuk router dapat terhubung ke internet kita membutuhkan yang namanya ISP
 (Internet Service Provider). Setelah kamu berlangganan ke salah satu ISP biasanya kamu akan diberikan layanan internet yang media nya bermacam-macam,
@@ -358,7 +358,7 @@ Untuk menggunakan Static IP kita harus mengetahui beberapa hal, antara lain:
 - IP Gateway
 - IP DNS
 
-### Static Address
+#### Static Address
 
 Apabila kalian sudah mengetahui ke 3 tersebut, langkah pertama kita akan menambahkan IP Address nya dengan
 cara pergi ke menu `/IP/Address/`
@@ -386,7 +386,7 @@ Setelah Address baru ditambahkan maka akan muncul di tabel `Address List`
     <img src="https://user-images.githubusercontent.com/64394320/166431479-35436686-b473-4df5-9a20-8423fce8a21f.png" alt="Address List" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-### Static Route
+#### Static Route
 
 Selanjutnya kita akan menambahkan route atau ip gateway dengan cara pergi ke menu `/IP/Routes`
 
@@ -422,7 +422,7 @@ ping ip_gateway_kamu
     <img src="https://user-images.githubusercontent.com/64394320/166433106-7d1207c7-3df4-46f7-89a9-594a97802eec.png" alt="ping gateway" class="img-fluid rounded mx-auto d-block" />
 </a>
 
-### Static DNS
+#### Static DNS
 
 Setelah menambahkan IP Gateway, langkah selanjutnya adalah menambahkan IP DNS dengan cara pergi ke menu `/IP/DNS`
 

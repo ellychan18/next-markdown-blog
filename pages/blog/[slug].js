@@ -7,6 +7,7 @@ import hljs from "highlight.js";
 import Header from "@/components/Header";
 import { sortByDate } from "@/utils";
 import JumpToTop from "@/components/JumpToTop";
+import Toc from "@/components/Toc";
 
 // marked.setOptions({
 //   highlight: function (code, lang, callback) {
@@ -78,6 +79,7 @@ export default function PostPage({
           <img src={cover_image} className="w-full rounded-lg" />
         </div>
         <div className="w-full mx-auto mb-5 relative overflow-x-auto prose prose-zinc prose-table:table-auto prose-th:bg-gray-900 prose-th:text-white prose-th:font-sans prose-th:p-4 prose-table:border prose-td:p-4 prose-tr:bg-gray-700 prose-tr:text-white max-w-3xl prose-blockquote:border-yellow-400 prose-blockquote:bg-gray-100 prose-blockquote:px-5 prose-blockquote:py-2 prose-blockquote:rounded">
+          <Toc content={content} />
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>

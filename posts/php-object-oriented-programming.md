@@ -9,7 +9,7 @@ author_title: "Web Developer"
 author_image: "/images/posts/author/arman.png"
 ---
 
-<h4 class="mt-4">
+<!-- <h4 class="mt-4">
    <i class="fas fa-book me-2"></i> Daftar Isi:
 </h4>
 
@@ -121,13 +121,13 @@ author_image: "/images/posts/author/arman.png"
 
 [16. Namespace](#namespace)
 <br>
-└─
+└─ -->
 
-## <a name="object-oriented-programming" href="#object-oriented-programming"><i class="fas fa-link me-2 text-dark"></i></a>Object Oriented Programming
+## Object Oriented Programming
 
 Objet Oriented Programming merupakan gaya pemrograman / programming style atau paradigma pemrograman
 
-#### <a name="karakteristik-object-oriented-programming" href="#karakteristik-object-oriented-programming"><i class="fas fa-link me-2 text-dark"></i></a>Karakteristik Object Oriented Programming
+#### Karakteristik Object Oriented Programming
 
 - Menyusun semua kode program dan struktur data sebagai objek
 - Objek adalah unit dasar dari program
@@ -135,7 +135,7 @@ Objet Oriented Programming merupakan gaya pemrograman / programming style atau p
 - Objek bisa saling berinteraksi
 - Java, Ruby, Python, C++, Javascript, PHP 5^
 
-#### <a name="kelebihan-object-oriented-programming" href="#kelebihan-object-oriented-programming"><i class="fas fa-link me-2 text-dark"></i></a>Kelebihan Object Oriented Programming
+#### Kelebihan Object Oriented Programming
 
 - Representasi dunia nyata
 - Enkapsulasi & Abstraksi data
@@ -144,7 +144,7 @@ Objet Oriented Programming merupakan gaya pemrograman / programming style atau p
 - Kemudahan pengelolaan
 - Digunakan oleh framework
 
-#### <a name="karakteristik-procedural-programming" href="#karakteristik-procedural-programming"><i class="fas fa-link me-2 text-dark"></i></a>Karakteristik Procedural Programming
+#### Karakteristik Procedural Programming
 
 - Intruksi dilakukan langkah demi langkah
 - Memecah program menjadi bagian - bagian kecil
@@ -152,7 +152,7 @@ Objet Oriented Programming merupakan gaya pemrograman / programming style atau p
 - Linear / Top-to-Bottom
 - Fortran, ALGOL, COBOL, PASCAL, C, PHP, Javascript
 
-#### <a name="kelebihan-procedural-programming" href="#kelebihan-procedural-programming"><i class="fas fa-link me-2 text-dark"></i></a>Kelebihan Procedural Programming
+#### Kelebihan Procedural Programming
 
 - To-the-Point
 - Simplicity & Kemudahan Implementasi (untuk compiler & interpreter)
@@ -161,27 +161,27 @@ Objet Oriented Programming merupakan gaya pemrograman / programming style atau p
 
 <hr>
 
-## <a name="class-dan-object" href="#class-dan-object"><i class="fas fa-link me-2 text-dark"></i></a>Class dan Object
+## Class dan Object
 
-#### <a name="class" href="#class"><i class="fas fa-link me-2 text-dark"></i></a>Class:
+#### Class:
 
 - Blueprint / Template untuk membuat instance dari object
 - Class mendefinisikan Object
 - Menyimpan data dan perilaku yang disebut property dan method
 
-#### <a name="cara-membuat-class" href="#cara-membuat-class"><i class="fas fa-link me-2 text-dark"></i></a>Membuat Class:
+#### Membuat Class:
 
 - Di-awali dengan menuliskan keyword `class`, di-ikuti nama dan dibatasi dengan `{}` untuk menyimpan property dan method di dalamnya
 - Aturan penamaan Class sama seperti variable atau function
 
-#### <a name="object" href="#object"><i class="fas fa-link me-2 text-dark"></i></a>Object:
+#### Object:
 
 - Object adalah implementasi atau instance dari rancangan lass
 - Instance yang didefiniskan oleh Class
 - Banyak Object dapat dibuat menggunakan satu Class
 - Object dibuat dengan keyword `new`
 
-#### <a name="contoh-program-class-dan-object" href="#contoh-program-class-dan-object"><i class="fas fa-link me-2 text-dark"></i></a>Contoh program:
+#### Contoh program:
 
 ```php
 // Class
@@ -196,13 +196,13 @@ $b = new Coba();
 
 <hr>
 
-## <a name="property-dan-method" href="#property-dan-method"><i class="fas fa-link me-2 text-dark"></i></a>Property & Method
+## Property & Method
 
-#### <a name="property" href="#property"><i class="fas fa-link me-2 text-dark"></i></a>Property:
+#### Property:
 
 - Merepresentasikan data atau keadaan dari sebuah Object - Variable yang ada di dalam Object (member variable) - Sama seperti variable di-dalam PHP namun di tambah dengan visibility di depannya
 
-#### <a name="method" href="#method"><i class="fas fa-link me-2 text-dark"></i></a>Method:
+#### Method:
 
 - Merepresentasikan perilaku (behavior) dari sebuah object
 - Function yang ada di-dalam Object
@@ -210,11 +210,11 @@ $b = new Coba();
 
 <hr>
 
-## <a name="constructor-method" href="#constructor-method"><i class="fas fa-link me-2 text-dark"></i></a>Constructor Method
+## Constructor Method
 
 - Merupakan sebuah method special atau method khusus yang ada di dalam sebuah Class. Kenapa special? `Karena otomatis dijalankan ketika sebuah Class kita instansiasi atau kita buat Object-nya`
 
-#### <a name="contoh-program-constructor-method" href="#contoh-program-constructor-method"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program:
+#### Contoh Program:
 
 ```php
 class Contoh {
@@ -233,12 +233,12 @@ Hello World!
 
 <hr>
 
-## <a name="object-type" href="#object-type"><i class="fas fa-link me-2 text-dark"></i></a>Object Type
+## Object Type
 
 - Pengertian:
   Object Type merupakan sebuah tipe data yang isinya merupakan object atau instance dari sebuah class yang dimana dikirimkannya melalui parameter suatu method.
 
-#### <a name="contoh-program-object-type" href="#contoh-program-object-type"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program:
+#### Contoh Program:
 
 ```php
 class Produk
@@ -285,7 +285,7 @@ echo $infoProduk1->cetak("asdsadas");
 
 ```
 
-#### <a name="breakdown-code-object-type" href="#breakdown-code-object-type"><i class="fas fa-link me-2 text-dark"></i></a>Breakdown
+#### Breakdown
 
 ```php
 class CetakInfoProduk
@@ -318,14 +318,14 @@ echo $infoProduk1->cetak($produk1);
 
 <hr>
 
-## <a name="inheritance-atau-pewarisan" href="#inheritance-atau-pewarisan"><i class="fas fa-link me-2 text-dark"></i></a>Inheritance ( Pewarisan )
+## Inheritance ( Pewarisan )
 
 - Menciptakan hierarki antar Class ( Parent & Child )
 - Child Class, mewarisi semua property dan method dari parrent-na (yang visible)
 - Child Class, memperluas (extends) fungsionalitas dari parrent-nya
 - Keyword `extends`
 
-#### <a name="contoh-program-inheritance" href="#contoh-program-inheritance"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program:
+#### Contoh Program:
 
 ```php
 class Produk {
@@ -349,11 +349,11 @@ Ini function __construct Class Produk
 
 <hr>
 
-## <a name="overriding" href="#overriding"><i class="fas fa-link me-2 text-dark"></i></a>Overiding
+## Overiding
 
 Overriding adalah sebuah istilah dimana kita bisa membuat method di Class Child yang memiliki nama yang sama dengan Class Parent nya, atau istilahnya Overriding ini mengambil alih atau menimpa. `Method yang kita buat menimpa method punya-nya Parent Class`
 
-#### <a name="contoh-program-overriding" href="#contoh-program-overriding"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program:
+#### Contoh Program:
 
 ```php
 class Produk {
@@ -402,7 +402,7 @@ Seperti contoh code diatas dimana Child Class memiliki method yang sama dengan p
 
 <hr>
 
-## <a name="visibility" href="#visibility"><i class="fas fa-link me-2 text-dark"></i></a>Visibility
+## Visibility
 
 - Konsep yang digunakan untuk mengatur akses dari <b>property</b> dan <b>method</b> pada sebuah objek
 - Ada 3 keyword visibility : <b>public</b>, <b>protected</b> dan <b>private</b>
@@ -410,13 +410,13 @@ Seperti contoh code diatas dimana Child Class memiliki method yang sama dengan p
 - <b>protected</b> hanya dapat digunakan di dalam sebuah kelas beserta turunannya (inheritance)
 - <b>private</b> hanya dapat digunakan di dalam sebuah kelas tertentu saja
 
-#### <a name="kenapa-visibility" href="#kenapa-visibility"><i class="fas fa-link me-2 text-dark"></i></a>Kenapa kita membutuhkan visibility?
+#### Kenapa kita membutuhkan visibility?
 
 - Hanya memperlihatkan aspek dari class yang dibutuhkan oleh "client"
 - Menentukan kebutuhan yang jelas untuk object
 - Memberikan kendali pada kode untuk menghindari "bug"
 
-#### <a name="contoh-program-visibility" href="#contoh-program-visibility"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program:
+#### Contoh Program:
 
 ```php
 class Scope {
@@ -492,11 +492,11 @@ echo $scope3->getHarga();
 
 <hr>
 
-## <a name="setter-dan-getter" href="#setter-dan-getter"><i class="fas fa-link me-2 text-dark"></i></a>Setter & Getter (Accessor Method)
+## Setter & Getter (Accessor Method)
 
 Setter dan Getter ini erat kaitan nya dengan Visibility. Memungkinkan kita untuk melakukan validasi
 
-#### <a name="contoh-program-setter-dan-getter" href="#contoh-program-setter-dan-getter"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program:
+#### Contoh Program:
 
 ```php
 class Foo {
@@ -522,21 +522,21 @@ echo $obj->getClassName();
 
 <hr>
 
-## <a name="static-keyword" href="#static-keyword"><i class="fas fa-link me-2 text-dark"></i></a>Static Keyword
+## Static Keyword
 
 Kita bisa mengakses <b>property</b> dan <b>method</b> dalam konteks <b>class</b>
 
-#### <a name="untuk-apa-static-keyword" href="#untuk-apa-static-keyword"><i class="fas fa-link me-2 text-dark"></i></a>Untuk Apa Static Keyword?
+#### Untuk Apa Static Keyword?
 
 - Member yang terikat dengan class, bukan dengan object
 - Nilai static akan selalu tetap meskipun object di-instansiasi berulang kali
 
-#### <a name="keyword-yang-dipakai-static-keyword" href="#keyword-yang-dipakai-static-keyword"><i class="fas fa-link me-2 text-dark"></i></a>Keyword yang dipakai?
+#### Keyword yang dipakai?
 
 - Ketika ingin membuat atau mendeklarasikan variable (property) atau function (method) menggunakan keyword <b>static</b> di depannya
 - Ketika ingin memanggil variable (property) atau function (method) menggunakan keyword <b>self::</b> di depannya
 
-#### <a name="contoh-program-static-keyword" href="#contoh-program-static-keyword"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program:
+#### Contoh Program:
 
 ```php
 class ContohStatic {
@@ -606,11 +606,11 @@ echo $obj4->halo();
 
 <hr>
 
-## <a name="constant" href="#constant"><i class="fas fa-link me-2 text-dark"></i></a>Constant
+## Constant
 
 Sebuah identifier untuk menyimpan nilai, sesuai dengan namanya nilai-nya tidak dapat berubah ketika kita sudah set di dalam program kita. Misalkan kita mempunyai konstanta bernilai 1 maka sampai selesai programnya dijalankan nilai nya akan selalu 1.
 
-#### <a name="keyword-yang-dipakai-constant" href="#keyword-yang-dipakai-constant"><i class="fas fa-link me-2 text-dark"></i></a>Keyword yang dipakai Constant:
+#### Keyword yang dipakai Constant:
 
 Keyword membuat konstanta pada PHP `define("NAME", value)` & `const`
 
@@ -644,7 +644,7 @@ Output:
 
 Perbedaannya adalah ketika kita ingin menggunakan konsep Object Oriented, nah menggunakan `define()` ini kita tidak dapat menyimpan kedalam sebuah Class, jadi `define()` ini harus disimpan diluar kelas sebagai constanta global. Sedangkan `const` ini kita bisa masukan kedalam sebuah Class sehingga dapat kita gunakan pada konsep Object Oriented
 
-#### <a name="contoh-program-constant-pada-oop" href="#contoh-program-constant-pada-oop"><i class="fas fa-link me-2 text-dark"></i></a>Contoh program constanta pada konsep Object Oriented:
+#### Contoh program constanta pada konsep Object Oriented:
 
 ```php
 class Coba {
@@ -660,11 +660,11 @@ Output:
 Arman Dwi Pangestu
 ```
 
-#### <a name="cara-memanggil-constant" href="#cara-memanggil-constant"><i class="fas fa-link me-2 text-dark"></i></a>Cara Memanggil Constant
+#### Cara Memanggil Constant
 
 Cara memanggil constant sama halnya dengan memanggil static keyword yaitu menggunakan keyword `::` dengan cara `Class::Property`
 
-#### <a name="magic-constant" href="#magic-constant"><i class="fas fa-link me-2 text-dark"></i></a>Magic Constant pada PHP:
+#### Magic Constant pada PHP:
 
 - `__LINE__` --> Menampilkan `baris` dimana constant ini ditulis
 - `__FILE__` --> Menampilkan `PATH File` yang bersangkutan
@@ -677,7 +677,7 @@ Cara memanggil constant sama halnya dengan memanggil static keyword yaitu menggu
 
 Selebihnya dapat dibaca di docs php [disini.](https://www.php.net/manual/en/language.constants.magic.php)
 
-#### <a name="contoh-program-magic-constant" href="#contoh-program-magic-constant"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program Magic Constant:
+#### Contoh Program Magic Constant:
 
 - Magic Constant `__FUNCTION__`
 
@@ -715,7 +715,7 @@ Coba
 
 <hr>
 
-## <a name="abstract-class" href="#abstract-class"><i class="fas fa-link me-2 text-dark"></i></a>Abstract Class
+## Abstract Class
 
 - Sebuah kelas yang <b>tidak dapat di-instansiasi</b> (tidak bisa membuat Object dari Class Abstract ini), yang di instansiasi adalah Class turunannya (Child Class)
 - Bisa disebut sebagai Kelas "abstrak" yang dimana Class sesungguhnya adalah Class-Class turunannya
@@ -725,7 +725,7 @@ Coba
 - Erat kaitannya dengan inheritance atau pewarisan
 - Digunakan dalam "pewarisan" / inheritance untuk "<b>memaksakan</b>" implementasi method abstrak yang sama untuk kelas turunannya. Di dalam Class Abstract nanti kita mempunyai sebuah method abstrak yang hanya interface nya saja (namanya saja gk ada isinya), isinya nanti kita tuliskan di Class-Class turunannya dengan menggunakan method yang namanya sama
 
-#### <a name="contoh-penerapan-atau-studi-kasus-abstract-class" href="#contoh-penerapan-atau-studi-kasus-abstract-class"><i class="fas fa-link me-2 text-dark"></i></a>Contoh penerapan / studi kasus untuk Abstract Class
+#### Contoh penerapan / studi kasus untuk Abstract Class
 
 ```php
 class Buah {
@@ -778,11 +778,11 @@ $buah->makan();
 
 dan kita juga menjalankan `method makan`, karena class buah mempunyai `method makan`, sekarang pertanyaan-nya buah nya rasa apa? nah pasti bingung kan, maka harus jelas dulu buah nya buah apa, apakah buah apel atau jeruk. Jadi sepertinya `class Buah` ini bukan sebuah class yang akan kita instansiasi, karena yang akan kita instansiasi kalo gk `class Apel` atau `class Jeruk` (Child Class-nya). Nah kalo ada kasus seperti ini kemungkinan yang tepat untuk menerapkan konsep `Abstract Class`
 
-#### <a name="cara-membuat-class-abstract" href="#cara-membuat-class-abstract"><i class="fas fa-link me-2 text-dark"></i></a>Cara Membuat Class Abstract
+#### Cara Membuat Class Abstract
 
 Cukup menambahkan keyword `abstract` sebelum keyword `class`
 
-#### <a name="contoh-program-membuat-class-abstract" href="#contoh-program-membuat-class-abstract"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Program Membuat Class Abstract
+#### Contoh Program Membuat Class Abstract
 
 ```php
 abstract class Buah {
@@ -808,13 +808,13 @@ Method ini hanya interface saja dan implementasi nya ada di kelas turunannya, na
 abstract public function makan();
 ```
 
-#### <a name="abstract-class-2" href="#abstract-class-2"><i class="fas fa-link me-2 text-dark"></i></a>Abstract Class 2
+#### Abstract Class 2
 
 - Semua kelas turunan, harus mengimplementasikan method abstrak yang ada di kelas abstraknya
 - Kelas abstrak boleh memiliki property / method reguler
 - Kelas abstrak boleh memiliki property / static method
 
-#### <a name="contoh-class-abstract" href="#contoh-class-abstract"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Class Abstract 2
+#### Contoh Class Abstract 2
 
 - `class mobil Extends Kendaraan`
 - `class Laptop Extends Komputer`
@@ -837,7 +837,7 @@ Komunikasi
 
 bisa kita jadikan sebagai class Abstract
 
-#### <a name="kenapa-kelas-abstrak" href="#kenapa-kelas-abstrak"><i class="fas fa-link me-2 text-dark"></i></a>Kenapa Kelas Abstrak?
+#### Kenapa Kelas Abstrak?
 
 Kenapa menggunakan kelas abstrak?
 
@@ -849,11 +849,11 @@ Kenapa menggunakan kelas abstrak?
 
 <hr>
 
-## <a name="abstract-class-bagian-2-studi-kasus" href="#abstract-class-bagian-2-studi-kasus"><i class="fas fa-link me-2 text-dark"></i></a>Abstract Class (Bagian 2) Studi Kasus
+## Abstract Class (Bagian 2) Studi Kasus
 
 Seperti pembahasan sebelumnya, konsep ini bukan masalah benar atau salah nya melainkan keputusan perancangan kode ketika membuat program
 
-#### <a name="contoh-kasus-program-tanpa-abstract-class" href="#contoh-kasus-program-tanpa-abstract-class"><i class="fas fa-link me-2 text-dark"></i></a>Contoh Kasus Program Tanpa Abstract Class
+#### Contoh Kasus Program Tanpa Abstract Class
 
 ```php
 class Produk {
@@ -1001,7 +1001,7 @@ class Komik extends Produk {
 }
 ```
 
-#### <a name="penerapan-konsep-abstract-class-pada-kasus-program-diatas" href="#penerapan-konsep-abstract-class-pada-kasus-program-diatas"><i class="fas fa-link me-2 text-dark"></i></a>Penerapan Konsep Abstract Class Pada Kasus Program diatas
+#### Penerapan Konsep Abstract Class Pada Kasus Program diatas
 
 ```php
 abstract class Produk
@@ -1101,7 +1101,7 @@ DAFTAR PRODUK : <br>
 
 <hr />
 
-## <a name="interface" href="#interface"><i class="fas fa-link me-2 text-dark"></i></a>Interface
+## Interface
 
 - Merupakan `kelas abstrak` yang sama sekali tidak memiliki implementasi
 - <b>Murni</b> merupakan template untuk kelas turunannya
@@ -1115,7 +1115,7 @@ DAFTAR PRODUK : <br>
 
 - Pada akhirnya akan mencapai `Polymorphism`
 
-#### <a name="keyword-yang-dipakai-interface" href="#keyword-yang-dipakai-interface"><i class="fas fa-link me-2 text-dark"></i></a>Keyword yang dipakai Interface
+#### Keyword yang dipakai Interface
 
 Keyword yang digunakan adalah `interface`. Jadi cukup menambahkan keyword tersebut di depan atau sebelum nama class nya dan tidak menulis keyword `class` nya lagi jadi cukup `interface NamaKelas`, contoh program nya:
 
@@ -1135,7 +1135,7 @@ Di dalam class `interface` kita hanya boleh mempunyai deklarasi method nya saja.
 ...
 ```
 
-#### <a name="implementasi-interface" href="#implementasi-interface"><i class="fas fa-link me-2 text-dark"></i></a>Implementasi Interface
+#### Implementasi Interface
 
 Kelas turunannya kita ubah seperti apa? misalnya disini `class Apel` ingin menjadi implementasi dari `class Buah` maka tambahkan keyword `implements` bukan `extends` lagi, contoh program:
 
@@ -1200,7 +1200,7 @@ class Jeruk implements Buah {
 
 Pada program diatas artinya `Class Apel` meng-implementasikan `interface Buah` dan `interface Benda`. Jika sudah begini konsekuensi nya adalah kita wajib menuliskan method dari kedua implementasi nya
 
-#### <a name="penerapan-konsep-interface-pada-kasus-program-diatas" href="#penerapan-konsep-interface-pada-kasus-program-diatas"><i class="fas fa-link me-2 text-dark"></i></a>Penerapan Konsep Interface Pada Kasus Program Diatas
+#### Penerapan Konsep Interface Pada Kasus Program Diatas
 
 ```php
 <?php
