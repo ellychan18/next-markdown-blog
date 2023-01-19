@@ -80,7 +80,7 @@ Disini kita akan mem-proteksi router dari sisi keamanan (walaupun ini hanya dasa
 
 Kenapa kita perlu mengubah `User Authentication` mikrotik? karena default login user mikortik adalah:
 
-> **NOTE**: _Password blank atau kosong_ > <br> > <br>
+> **NOTE**: _Password blank atau kosong_
 >
 > ```nohighlight
 > Username: admin
