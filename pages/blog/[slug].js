@@ -56,7 +56,7 @@ export default function PostPage({
     <>
       <Head>
         <title>Arman Blog | {title}</title>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         {/* Open Graph */}
         <meta property="og:title" content={title} />
