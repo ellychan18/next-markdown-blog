@@ -18,7 +18,7 @@ export default function Toc({ content }) {
                       <li key={i} data-depth={heading.depth}>
                         <Link
                           href={`#${heading.text
-                            .replace(/ /g, "-")
+                            .replace(/[,\s]+[ \s]/g, "-")
                             .toLowerCase()}`}
                           legacyBehavior
                         >
@@ -32,7 +32,7 @@ export default function Toc({ content }) {
                       <li key={i} data-depth={heading.depth} className="ml-4">
                         <Link
                           href={`#${heading.text
-                            .replace(/ /g, "-")
+                            .replace(/[,\s]+[ \s]/g, "-")
                             .toLowerCase()}`}
                           legacyBehavior
                         >
@@ -46,7 +46,7 @@ export default function Toc({ content }) {
                       <li key={i} data-depth={heading.depth} className="ml-8">
                         <Link
                           href={`#${heading.text
-                            .replace(/ /g, "-")
+                            .replace(/[,\s]+[ \s]/g, "-")
                             .toLowerCase()}`}
                           legacyBehavior
                         >
@@ -60,7 +60,7 @@ export default function Toc({ content }) {
                       <li key={i} data-depth={heading.depth} className="ml-12">
                         <Link
                           href={`#${heading.text
-                            .replace(/ /g, "-")
+                            .replace(/[,\s]+[ \s]/g, "-")
                             .toLowerCase()}`}
                           legacyBehavior
                         >
@@ -74,7 +74,7 @@ export default function Toc({ content }) {
                       <li key={i} data-depth={heading.depth} className="ml-16">
                         <Link
                           href={`#${heading.text
-                            .replace(/ /g, "-")
+                            .replace(/[,\s]+[ \s]/g, "-")
                             .toLowerCase()}`}
                           legacyBehavior
                         >
@@ -88,7 +88,7 @@ export default function Toc({ content }) {
                       <li key={i} data-depth={heading.depth} className="ml-20">
                         <Link
                           href={`#${heading.text
-                            .replace(/ /g, "-")
+                            .replace(/[,\s]+[ \s]/g, "-")
                             .toLowerCase()}`}
                           legacyBehavior
                         >
