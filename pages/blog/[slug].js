@@ -85,13 +85,13 @@ export default function PostPage({
       <div className="container mx-10 px-10 mt-5">
         <div className="md:w-6/12 w-full mx-auto flex items-center flex-col">
           <div className="flex items-center text-black/60 space-x-4">
-            <div className="uppercase">{tag}</div>
+            <div className="uppercase">
+              <Link href={`/${tag.toLowerCase()}`}>{tag}</Link>
+            </div>
             <span>•</span>
             <div>{date}</div>
           </div>
-          <h2 className="text-2xl mt-4 text-center">
-            <a href="/detail">{title}</a>
-          </h2>
+          <h2 className="text-2xl mt-4 text-center">{title}</h2>
           <div className="flex items-center mt-5">
             <img
               src={author_image}

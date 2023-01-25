@@ -26,7 +26,7 @@ const JumpToTop = () => {
   return (
     <>
       {showButton && (
-        <div className="container text-white hover:text-gray-500">
+        <div className="container text-white hover:text-gray-400">
           <button
             className={`block fixed bottom-9 right-7 md:bottom-10 md:right-10 bg-black py-2.5 px-3 md:py-3 md:px-3.5 text-lg`}
             style={{ borderRadius: "50%" }}

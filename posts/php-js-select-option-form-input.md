@@ -70,11 +70,7 @@ dengan tambahan attribute `value` yang menampung nama merk dan attribute `data-p
           </tr>
           <tr>
             <td>
-              <select
-                name="brand"
-                onchange="getDataPrice(this.value)"
-                id="selection"
-              >
+              <select name="brand" onchange="getDataPrice()" id="selection">
                 <?php foreach($cars as $car): ?>
                 <option
                   value="<?= $car->brand ?>"
@@ -109,7 +105,7 @@ Di kode javascript ini kita akan membuat function dengan nama `getDataPrice` yan
 option yang dipilih berubah sehingga kita bisa melakukan DOM `(Document Object Model)` untuk input form `price` sesuai dengan merk mobil yang dipilih
 
 ```javascript
-const getDataPrice = (value) => {
+const getDataPrice = () => {
   const selectElement = document.querySelector("#selection");
   const selectedOption = selectElement.options[selectElement.selectedIndex];
   const priceAttribute = selectedOption.getAttribute("data-price");
@@ -285,4 +281,15 @@ ketika option berganti sehingga setiap option berubah maka akan memanggil functi
 
 ```html
 <select name="brand" onchange="getDataPrice()" id="selection"></select>
+```
+
+#### Option
+
+Pada bagian ini variable `cars` di lakukan looping menggunakan function `foreach`. Attribute `data-price` berfungsi untuk mendapatkan data `price`
+yang dimana nantinya akan dilakukan DOM menggunakan javascript ke input form price sesuai dengan option yang dipilih
+
+```php
+<?php foreach($cars as $car): ?>
+    <option value="<?= $car->brand ?>" data-price="<?= $car->price ?>" name="brand"><?= $car->brand ?></option>
+<?php endforeach; ?>
 ```
