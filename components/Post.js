@@ -17,7 +17,7 @@ export default function Post({ post }) {
           <span>•</span>
           <div>{post.frontmatter.date}</div>
         </div>
-        <h2 className="text-2xl mt-4 ">
+        <h2 className="text-xl mt-4 ">
           <Link href={`/blog/${post.slug}`} legacyBehavior>
             <a>{post.frontmatter.title}</a>
           </Link>
