@@ -50,3 +50,7 @@ nvim
 ```bash
 :TSInstallSync bash java javascript ruby php c cpp c_sharp python go rust typescript html css
 ```
+
+## Hasilnya
+
+![image](https://user-images.githubusercontent.com/64394320/216773041-538dbaf0-5c0a-40e8-9176-52494be58781.png)

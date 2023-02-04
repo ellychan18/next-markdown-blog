@@ -13,7 +13,7 @@ export default function Post({ post }) {
           </a>
         </Link>
         <div className="flex items-center text-black/60 space-x-4">
-          <div className="uppercase text-xs">{post.frontmatter.tag}</div>
+          <div className="capitalize text-base">{post.frontmatter.tag}</div>
           <span>•</span>
           <div>{post.frontmatter.date}</div>
         </div>

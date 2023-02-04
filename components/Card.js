@@ -24,7 +24,7 @@ export default function Card({ posts }) {
           </div>
           <div className="lg:w-4/12 md:w-5/12 w-full px-4">
             <div className="flex items-center text-black/60 space-x-4">
-              <div className="uppercase text-xs">
+              <div className="capitalize text-base">
                 {featured.frontmatter.tag}
               </div>
               <span>•</span>
