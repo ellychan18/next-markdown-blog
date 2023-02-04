@@ -25,7 +25,7 @@ winget install --id XP8K0HKJFRXGCK --source msstore
 
 ## Buat Theme File Untuk Oh My Posh
 
-> **CATATAN**: Contoh file tema disini berada di PATH `C:\Users\User\AppData\Local\oh-my-posh\arman.omp.json`
+> **CATATAN**: Contoh file tema disini berada di PATH `C:\Users\arman\AppData\Local\Programs\oh-my-posh\themes\me.omp.json`
 
 ```json
 {
@@ -51,7 +51,7 @@ winget install --id XP8K0HKJFRXGCK --source msstore
             "folder_icon": "\uf07c"
           },
           "style": "powerline",
-          "template": " ï» {{ .Path }} ",
+          "template": "  {{ .Path }} ",
           "type": "path"
         },
         {
@@ -100,7 +100,7 @@ winget install --id XP8K0HKJFRXGCK --source msstore
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2",
           "style": "diamond",
-          "template": " î¯Š {{ .Name }} ",
+          "template": "  {{ .Name }} ",
           "trailing_diamond": "<transparent,#2a2a2a>\ue0b2</>",
           "type": "shell"
         },
@@ -109,7 +109,7 @@ winget install --id XP8K0HKJFRXGCK --source msstore
           "foreground": "#011627",
           "leading_diamond": "\ue0b2",
           "style": "diamond",
-          "template": " ï¡š {{ round .PhysicalPercentUsed .Precision }}% ",
+          "template": "  {{ round .PhysicalPercentUsed .Precision }}% ",
           "trailing_diamond": "<transparent,#7a40c6>\ue0b2</>",
           "type": "sysinfo"
         },
@@ -122,7 +122,7 @@ winget install --id XP8K0HKJFRXGCK --source msstore
             "threshold": 0
           },
           "style": "diamond",
-          "template": " ï€— {{ .FormattedMs }} ",
+          "template": "  {{ .FormattedMs }} ",
           "trailing_diamond": "<transparent,#91f2ff>\ue0b2</>",
           "type": "executiontime"
         }
@@ -158,7 +158,7 @@ winget install --id XP8K0HKJFRXGCK --source msstore
             "always_enabled": true
           },
           "style": "plain",
-          "template": "ï¡",
+          "template": "",
           "type": "exit"
         }
       ],
@@ -172,7 +172,7 @@ winget install --id XP8K0HKJFRXGCK --source msstore
     "foreground": "#d6deeb",
     "template": "\ue285 "
   },
-  "version": 2
+  "version": 2
 }
 ```
 
@@ -181,7 +181,7 @@ winget install --id XP8K0HKJFRXGCK --source msstore
 Setelah Theme diatas kita buat selanjutnya kita akan gunakan atau me-load theme nya dengan cara
 
 ```bash
-oh-my-posh init pwsh --config "$env:C:\Users\User\AppData\Local\oh-my-posh\arman.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "C:\Users\arman\AppData\Local\Programs\oh-my-posh\themes\me.omp.json" | Invoke-Expression
 ```
 
 > **CATATAN**: Cara diatas akan meload oh-my-posh hanya sekali (jika keluar terminal atau membuka baru maka tidak akan me-load tema nya).
@@ -202,7 +202,7 @@ notepad $PROFILE
 Masukan script di dalam file `$PROFILE`
 
 ```bash
-oh-my-posh init pwsh --config "$env:C:\Users\User\AppData\Local\oh-my-posh\arman.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config "C:\Users\arman\AppData\Local\Programs\oh-my-posh\themes\me.omp.json" | Invoke-Expression
 ```
 
 > Jika muncul error ketika startup powershell masalah dengan startup command, jalankan perintah berikut:
@@ -210,3 +210,7 @@ oh-my-posh init pwsh --config "$env:C:\Users\User\AppData\Local\oh-my-posh\arman
 ```bash
 Set-ExecutionPolicy RemoteSigned
 ```
+
+## Hasilnya
+
+![image](https://user-images.githubusercontent.com/64394320/216772160-e8488abc-7d10-4fd2-8132-9069de597e8a.png)
