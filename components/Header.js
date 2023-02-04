@@ -13,9 +13,10 @@ export default function Header({ frontmatter }) {
   //   console.log(post);
   // });
   const dropdownList = [
-    { text: "Internet", href: "/posts" },
-    { text: "Books", href: "/posts" },
-    { text: "Open Source", href: "/posts" },
+    { text: "Setup", href: "/setup" },
+    { text: "Internet", href: "/internet" },
+    { text: "Books", href: "/books" },
+    { text: "Open Source", href: "/open_source" },
   ];
 
   return (
