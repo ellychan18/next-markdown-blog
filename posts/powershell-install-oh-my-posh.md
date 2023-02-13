@@ -1,7 +1,7 @@
 ---
 title: "PowerShell - Install Oh-My-Posh"
 tag: "Setup"
-date: "February 24 2023"
+date: "January 24 2023"
 excerpt: "Pada artikel ini kita akan melakukan instalasi Oh-My-Posh"
 cover_image: "/images/posts/ohmyposh.png"
 author_name: "Arman Dwi Pangestu"
