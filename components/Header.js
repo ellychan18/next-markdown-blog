@@ -26,26 +26,27 @@ export default function Header({ frontmatter }) {
           <div className="flex items-center">
             <div className="w-3/12 lg:hidden">
               <button onClick={() => setOffcanvas(!offcavnas)}>
-                <FaBars />
+                <FaBars className="text-white" />
               </button>
             </div>
             <div className="lg:w-2/12 w-6/12">
               <Link href="/" legacyBehavior>
                 <a className="flex items-center justify-center lg:justify-start">
-                  <div className="w-10 h-10 bg-black text-white rounded flex items-center justify-center mr-5 shadow-2xl">
+                  <div className="w-10 h-10 bg-zinc-800 text-white rounded flex items-center justify-center mr-5 shadow-2xl">
                     A
                   </div>
-                  Arman
+                  <span className="text-white">Arman</span>
                 </a>
               </Link>
             </div>
             <div className="w-3/12 lg:hidden text-right">
               <button onClick={() => setIconSearch(!iconSearch)}>
-                <FaSearch />
+                <FaSearch className="text-white" />
               </button>
             </div>
+            {/* Mobile */}
             <div
-              className={`lg:w-7/12 w-full bg-white fixed lg:static top-0 h-full lg:h-auto p-10 lg:p-0 transition-all ${
+              className={`lg:w-7/12 w-full fixed lg:static bg-zinc-900 top-0 h-full lg:h-auto p-10 lg:p-0 transition-all ${
                 offcavnas ? "left-0" : "-left-full"
               }`}
             >
@@ -59,7 +60,7 @@ export default function Header({ frontmatter }) {
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="black"
+                  stroke="white"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -72,22 +73,22 @@ export default function Header({ frontmatter }) {
               <ul className="lg:space-x-14 flex lg:items-center flex-col lg:flex-row space-y-4 lg:space-y-0">
                 <li>
                   <Link href="/networking" test="Hello World" legacyBehavior>
-                    <a className="hover:underline">Networking</a>
+                    <a className="hover:underline text-white">Networking</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/programming" legacyBehavior>
-                    <a className="hover:underline">Programming</a>
+                    <a className="hover:underline text-white">Programming</a>
                   </Link>
                 </li>
                 <li>
                   <Link href="/linux" legacyBehavior>
-                    <a className="hover:underline">Linux</a>
+                    <a className="hover:underline text-white">Linux</a>
                   </Link>
                 </li>
                 <li className="relative">
                   <a
-                    className="hover:underline cursor-pointer flex items-center"
+                    className="hover:underline cursor-pointer flex items-center text-white"
                     onClick={() => setDropdown(!dropdown)}
                   >
                     Lainnya
@@ -96,7 +97,7 @@ export default function Header({ frontmatter }) {
                     />
                   </a>
                   {dropdown && (
-                    <ul className="absolute w-[200px] bg-black rounded shadow-2xl mt-4">
+                    <ul className="absolute w-[200px] bg-zinc-800 rounded shadow-2xl mt-4">
                       {dropdownList.map(({ text, href }) => (
                         <li
                           key={text}
@@ -120,7 +121,7 @@ export default function Header({ frontmatter }) {
               }`}
             >
               <button
-                className="absolute top-3 right-14 lg:hidden"
+                className="absolute top-2 right-14 lg:hidden"
                 onClick={() => setIconSearch(false)}
               >
                 <svg
@@ -129,7 +130,7 @@ export default function Header({ frontmatter }) {
                   height="24"
                   viewBox="0 0 24 24"
                   fill="none"
-                  stroke="currentColor"
+                  stroke="white"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -141,7 +142,7 @@ export default function Header({ frontmatter }) {
                 </svg>
               </button>
               <input
-                className="border-2 py-2 px-6 w-full lg:rounded-full rounded-lg bg-search"
+                className="py-2 px-6 w-full bg-zinc-800 text-gray-300 lg:rounded-full rounded-lg bg-search"
                 placeholder="Search ..."
                 value={search}
                 onChange={(e) => {
@@ -177,7 +178,7 @@ export default function Header({ frontmatter }) {
                       return (
                         <a
                           href={`/blog/${post.slug}`}
-                          className={`flex flex-col items-center border rounded-lg shadow-md md:flex-row bg-black hover:bg-gray-900`}
+                          className={`flex flex-col items-center border rounded-lg shadow-md md:flex-row bg-zinc-800 hover:bg-gray-700/60`}
                           key={index}
                         >
                           <img

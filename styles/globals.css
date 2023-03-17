@@ -38,12 +38,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #333;
 }
 
 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 /* header {
@@ -250,6 +249,7 @@ code {
   margin-bottom: 0.3em;
   /* background-color: #282c34; */
   color: rgb(245, 245, 245);
+  background-color: #0f1419;
   border: 1px solid rgba(110, 118, 129, 0.4);
 }
 

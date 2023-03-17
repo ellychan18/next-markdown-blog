@@ -12,25 +12,25 @@ export default function Post({ post }) {
             />
           </a>
         </Link>
-        <div className="flex items-center text-black/60 space-x-4">
+        <div className="flex items-center text-zinc-500 space-x-4">
           <div className="capitalize text-base">{post.frontmatter.tag}</div>
           <span>•</span>
           <div>{post.frontmatter.date}</div>
         </div>
         <h2 className="text-xl mt-4 ">
           <Link href={`/blog/${post.slug}`} legacyBehavior>
-            <a>{post.frontmatter.title}</a>
+            <a className="text-slate-200">{post.frontmatter.title}</a>
           </Link>
         </h2>
-        <p className="text-black/60 mt-5 w-10/12">{post.frontmatter.excerpt}</p>
+        <p className="text-zinc-500 mt-5 w-10/12">{post.frontmatter.excerpt}</p>
         <div className="flex items-center mt-5">
           <img
             src={post.frontmatter.author_image}
             className="w-14 h-14 rounded-full object-cover"
           />
           <div className="ml-4">
-            <h3>{post.frontmatter.author_name}</h3>
-            <div className="text-black/60 text-sm mt-1">
+            <h3 className="text-zinc-300">{post.frontmatter.author_name}</h3>
+            <div className="text-zinc-500 text-sm mt-1">
               {post.frontmatter.author_title}
             </div>
           </div>
