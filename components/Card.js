@@ -23,19 +23,19 @@ export default function Card({ posts }) {
             </a>
           </div>
           <div className="lg:w-4/12 md:w-5/12 w-full px-4">
-            <div className="flex items-center text-black/60 space-x-4">
+            <div className="flex items-center text-zinc-500 space-x-4">
               <div className="capitalize text-base">
                 {featured.frontmatter.tag}
               </div>
               <span>•</span>
-              <div className="">{featured.frontmatter.date}</div>
+              <div>{featured.frontmatter.date}</div>
             </div>
             <h2 className="text-xl mt-4">
-              <a href={`/blog/${featured.slug}`}>
+              <a href={`/blog/${featured.slug}`} className="text-slate-200">
                 {featured.frontmatter.title}
               </a>
             </h2>
-            <p className="text-black/60 mt-2 w-10/12">
+            <p className="text-zinc-500 mt-2 w-10/12">
               {featured.frontmatter.excerpt}
             </p>
             <div className="flex items-center mt-5">
@@ -44,8 +44,10 @@ export default function Card({ posts }) {
                 className="w-14 h-14 rounded-full object-cover"
               />
               <div className="ml-4">
-                <h3>{featured.frontmatter.author_name}</h3>
-                <div className="text-black/60 text-sm mt-1">
+                <h3 className="text-zinc-300">
+                  {featured.frontmatter.author_name}
+                </h3>
+                <div className="text-zinc-500 text-sm mt-1">
                   {featured.frontmatter.author_title}
                 </div>
               </div>

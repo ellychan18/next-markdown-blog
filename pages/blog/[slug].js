@@ -84,29 +84,29 @@ export default function PostPage({
 
       <div className="container mx-10 px-10 mt-5">
         <div className="md:w-6/12 w-full mx-auto flex items-center flex-col">
-          <div className="flex items-center text-black/60 space-x-4">
-            <div className="capitalize">
+          <div className="flex items-center text-zinc-500 space-x-4">
+            <div className="capitalize text-base">
               <Link href={`/${tag.toLowerCase()}`}>{tag}</Link>
             </div>
             <span>•</span>
             <div>{date}</div>
           </div>
-          <h2 className="text-2xl mt-4 text-center">{title}</h2>
+          <h2 className="text-2xl mt-4 text-center text-slate-200">{title}</h2>
           <div className="flex items-center mt-5">
             <img
               src={author_image}
               className="w-14 h-14 rounded-full object-cover"
             />
             <div className="ml-4">
-              <h3>{author_name}</h3>
-              <div className="text-black/60 text-sm mt-1">{author_title}</div>
+              <h3 className="text-zinc-300">{author_name}</h3>
+              <div className="text-zinc-500 text-sm mt-1">{author_title}</div>
             </div>
           </div>
         </div>
         <div className="md:w-10/12 w-full mx-auto my-10">
           <img src={cover_image} className="w-full rounded-lg" />
         </div>
-        <div className="w-full mx-auto mb-5 relative overflow-x-auto prose prose-zinc prose-table:table-auto prose-th:bg-gray-900 prose-th:text-white prose-th:font-sans prose-th:p-4 prose-table:border prose-td:p-4 prose-tr:bg-gray-700 prose-tr:text-white max-w-3xl prose-blockquote:border-yellow-400 prose-blockquote:bg-gray-100 prose-blockquote:px-5 prose-blockquote:py-2 prose-blockquote:rounded">
+        <div className="w-full mx-auto mb-5 overflow-x-auto prose prose-table:table-auto prose-table:border-separate prose-th:bg-zinc-900 prose-th:text-gray-200 prose-th:font-sans prose-th:p-4 prose-table:border prose-td:p-4 prose-tr:bg-zinc-800 prose-tr:text-gray-400 max-w-3xl prose-blockquote:border-yellow-400 prose-blockquote:bg-zinc-800 prose-blockquote:text-gray-400 prose-blockquote:not-italic prose-blockquote:px-5 prose-blockquote:py-2 prose-blockquote:rounded">
           <Toc content={content} />
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
